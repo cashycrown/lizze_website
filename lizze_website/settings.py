@@ -73,9 +73,19 @@ WSGI_APPLICATION = 'lizze_website.wsgi.application'
 
 
 # Database
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=config('DATABASE_URL', default='sqlite:///' + str(BASE_DIR / 'db.sqlite3'))
+#     )
+# }
+# DATABASES = {
+#     'default': dj_database_url.parse(
+#         config('DATABASE_URL', default='sqlite:///db.sqlite3')
+#     )
+# }
 DATABASES = {
     'default': dj_database_url.config(
-        default=config('DATABASE_URL', default='sqlite:///' + str(BASE_DIR / 'db.sqlite3'))
+        default=config('DATABASE_URL')
     )
 }
 
@@ -106,7 +116,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]
+STATICFILES_DIRS = [ BASE_DIR / "Lashify_Artistry" / "static",]
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
