@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Confirmed</title>
+</head>
+<body>
+    <h2>Hello {{ booking.name }},</h2>
+
+    <p>Your booking for <strong>{{ booking.service }}</strong> on <strong>{{ booking.date }}</strong> has been confirmed!</p>
+
+    <p>Your reference code is: <strong>{{ booking.reference }}</strong></p>
+
+    {% if booking.verification_slip %}
+        <p>Your proof of confirmation has been attached to this email.</p>
+    {% endif %}
+
+    <p>Thank you for choosing Lashify Artistry!</p>
+</body>
+</html>

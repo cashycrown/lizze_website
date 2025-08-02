@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New Booking Received</title>
+</head>
+<body>
+    <h2>New Booking Alert</h2>
+
+    <p><strong>Reference:</strong> {{ booking.reference }}</p>
+    <p><strong>Customer Name:</strong> {{ booking.name }}</p>
+    <p><strong>Email:</strong> {{ booking.email }}</p>
+    <p><strong>Service:</strong> {{ booking.service }}</p>
+    <p><strong>Custom Details:</strong> {{ booking.custom_details }}</p>
+    <p><strong>Booking Date:</strong> {{ booking.date }}</p>
+    <p><strong>Fee:</strong> ₦{{ booking.fee }}</p>
+
+    {% if booking.payment_proof %}
+        <p><strong>Payment Proof:</strong> Attached to this email</p>
+    {% else %}
+        <p><strong>Payment Proof:</strong> Not uploaded</p>
+    {% endif %}
+
+    <p>Please log in to the admin panel to verify and confirm this booking.</p>
+</body>
+</html>

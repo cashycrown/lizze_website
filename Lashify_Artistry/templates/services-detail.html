@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lashify Artistry</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'css/tooplate-clean-work.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="site-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12 d-flex flex-wrap">
+                <p class="d-flex me-4 mb-0"><i class="bi-house-fill me-2"></i> One-Stop Beauty Experience</p>
+                <p class="d-none d-md-block me-4 mb-0"><i class="bi-clock-fill me-2"></i><strong>Mon - Fri:</strong> 8:00 AM - 5:30 PM</p>
+                <p class="ms-auto mb-0 text-white d-flex align-items-center">
+                    <i class="bi-whatsapp me-2"></i><a href="tel:7011598254" class="text-white">701 159 8254</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'images/logo.jpg' %}" class="logo img-fluid" alt="Logo">
+            <span style='color: darkmagenta;' class="ms-2">Lashify Artistry</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a style='color: darkmagenta;'class="nav-link" href="{% url 'index' %}">Home</a></li>
+                <li class="nav-item"><a style='color: darkmagenta;' class="nav-link" href="{% url 'about' %}">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a style='color: darkmagenta;' class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+                    <ul class="dropdown-menu">
+                        <li><a style='color: darkmagenta;' class="dropdown-item" href="{% url 'services' %}">Our Services</a></li>
+                        <li><a style='color: darkmagenta;' class="dropdown-item" href="{% url 'coming_soon' %}">Coming Soon</a></li>
+                        <li><a style='color: darkmagenta;' class="dropdown-item" href="{% url 'page_404' %}">Page 404</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a style='color: darkmagenta;' class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+                <li class="nav-item ms-3">
+                    <a style='color: darkmagenta;' class="nav-link custom-btn btn" href="#">Get Started</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Service Booking Form Section -->
+<section class="section-padding form-section bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-12">
+                <div class="custom-block bg-white shadow p-5 rounded-4">
+                    <h2 class="mb-4 text-center">Book a Service</h2>
+
+                    <div class="alert alert-warning text-dark">
+                        <strong>Note:</strong> A non-refundable booking fee of <strong>₦5,000</strong> is required for every service. The fee secures your appointment slot and will be deducted from the total service cost.
+                    </div>
+
+                    <div class="alert alert-info d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Payment Info:</strong><br>
+                            Booking fees vary by service.<br>
+                            Transfer to: <strong>Acct: 5006210599 (Moniepoint Bank)</strong>
+                        </div>
+                        <button class="btn btn-sm btn-outline-dark" onclick="copyAccount()">Copy</button>
+                    </div>
+
+                    <form method="POST" enctype="multipart/form-data" action="{% url 'create_booking' %}">
+                        {% csrf_token %}
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label>Full Name</label>
+                                <input type="text" name="name" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Email</label>
+                                <input type="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Select Service</label>
+                                <select name="service" id="service" class="form-select" required onchange="updateFee()">
+                                    <option value="">-- Choose Service --</option>
+                                    <option value="tattoo">Semi Permanent Tattoos</option>
+                                    <option value="GNSL_nails">Gel nails (short length)</option>
+                                    <option value="GNML_nails">Gel nails (medium length)</option>
+                                    <option value="GNLL_nails">Gel nails (long length)</option>
+                                    <option value="ANSLP_nails">Arcylic nails short length plain</option>
+                                    <option value="ANSLFT_nails">Arcylic nails short length french tips</option>
+                                    <option value="ANSLED_nails">Arcylic nails short length extra designs</option>
+                                    <option value="ANMLP_nails">Arcylic nails meduium length plain</option>
+                                    <option value="ANMLFT_nails">Arcylic nails meduium length french tips</option>
+                                    <option value="ANMLED_nails">Arcylic nails meduium length extra designs</option>
+                                    <option value="ANLLP_nails">Arcylic nails long length plain</option>
+                                    <option value="ANLLFT_nails">Arcylic nails long length french tips</option>
+                                    <option value="ANLLED_nails">Arcylic nails long length extra designs</option>
+                                    <option value="ANELLP_nails">Arcylic nails extra long length plain</option>
+                                    <option value="ANELLFT_nails">Arcylic nails extra long length french tips</option>
+                                    <option value="ANELLED_nails">Arcylic nails extra long length extra designs</option>
+                                    <option value="C_lashes">Classic Lashes</option>
+                                    <option value="H_lashes">Hybrid Lashes</option>
+                                    <option value="V_lashes">Volume Lashes</option>
+                                    <option value="MV_lashes">Mega Volume Lashes</option>
+                                    <option value="N_pedicure">Normal Pedicure</option>
+                                    <option value="F_pedicure">French Pedicure</option>
+                                    <option value="P_pedicure">Paraffin Pedicure</option>
+                                    <option value="hair">Hair styling</option>
+                                    <option value="manicure">Manicure</option>
+                                     <option value="facial">Facial Treatment</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Total Fee</label>
+                                <input type="text" id="feeDisplay" class="form-control" readonly value="₦0">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Preferred Appointment Date</label>
+                                <input type="date" name="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Payment Proof (Screenshot)</label>
+                                <input type="file" name="payment_proof" class="form-control" accept="image/*" required>
+                            </div>
+                            <div class="col-12">
+                                <label>Describe the Service in Detail</label>
+                                <textarea name="custom_details" rows="4" class="form-control" placeholder="e.g. Acrylic nails, long length, with glitter design..." required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn custom-btn mt-4">Book Appointment</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+ <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2">
+                        <div>
+                            <img src="{% static 'images/logo.jpg'%}" class="logo img-fluid" alt="">
+                        </div>
+
+                        <ul class="footer-menu d-flex flex-wrap ms-5">
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">About Us</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Blog</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Reviews</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+                        <h5 class="site-footer-title mb-3">Our Services</h5>
+
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                    Semi Permanent Tattoos
+                                </a>
+                            </li>
+
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                   Facial Treatment
+                                </a>
+                            </li>
+
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                    Lash Extensions
+                                </a>
+                            </li>
+
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                    Pedicure
+                                </a>
+                            </li>
+
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                    Manicure
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
+                        <h5 class="site-footer-title mb-3">Office</h5>
+
+                        <p class="text-white d-flex mt-3 mb-2">
+                            <i class="bi-geo-alt-fill me-2"></i>
+                            Chinese fence, davol bus stop iyana iyesi, Sango ota.
+                        </p>
+
+                        <p class="text-white d-flex mb-2">
+                            <i class="bi-telephone-fill me-2"></i>
+
+                            <a href="tel: 110-220-9800" class="site-footer-link">
+                                701-159-8254
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <i class="bi-envelope-fill me-2"></i>
+
+                            <a href="mailto:info@company.com" class="site-footer-link">
+                               Lashifyartistry1@gmail.com
+                            </a>
+                        </p>
+
+                        <ul class="social-icon mt-4">
+                            
+
+                            <li class="social-icon-item">
+                                <a href="https://www.tiktok.com/@lashifyartistry?_t=ZM-8xxmicjvIA9&_r=1" class="social-icon-link button button--skoll">
+                                    <span></span>
+                                    <span class="bi-tiktok"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.instagram.com/lashify_artistry/?utm_source=ig_web_button_share_sheet" class="social-icon-link button button--skoll">
+                                    <span></span>
+                                    <span class="bi-instagram"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-6 mt-3 mt-lg-0 mt-md-0">
+                        <div class="featured-block">
+                            <h5 class="text-white mb-3">Service Hours</h5>
+
+                            <strong class="d-block text-white mb-1">Mon - Fri</strong>
+
+                            <p class="text-white mb-3">8:00 AM - 5:30 PM</p>
+
+                            <strong class="d-block text-white mb-1">Sat</strong>
+
+                            <p class="text-white mb-0">6:00 AM - 2:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <p class="copyright-text mb-0">Copyright © 2025 Lashify Artistry..ltd</p>
+                        </div>
+                        
+                        <div class="col-lg-6 col-12 text-end">
+                            <p class="copyright-text mb-0">
+                            // Designed by <a href="https://www.tooplate.com" target="_parent">Olamide</a> //</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+       
+
+   
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.backstretch.min.js' %}"></script>
+<script src="{% static 'js/counter.js' %}"></script>
+<script src="{% static 'js/countdown.js' %}"></script>
+<script src="{% static 'js/init.js' %}"></script>
+<script src="{% static 'js/modernizr.js' %}"></script>
+<script src="{% static 'js/animated-headline.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+ </body>
+</html>
+
+<script>
+    const fees = {
+       GNSL_nails: 6000,
+       GNML_nails: 8000, 
+       GNLL_nails: 10000,
+       ANSLP_nails: 10000,
+       ANSLFT_nails: 12000,
+       ANSLED_nails: 14000,
+       ANMLP_nails: 12000,
+        ANMLFT_nails: 15000,
+        ANMLED_nails: 18000,
+        ANLLP_nails: 16000,
+        ANLLFT_nails: 20000,
+        ANLLED_nails: 25000,
+        ANELLP_nails: 18000,
+        ANELLFT_nails: 22000,
+        ANELLED_nails: 30000,
+        P_pedicure: 6000,
+        F_pedicure: 6000,
+        N_pedicure: 6000,
+        manicure: 5000,
+        facial: 7000,
+        C_lashes: 12000,
+        V_lashes: 22000,
+        H_lashes: 18000,
+        MV_lashes: 28000,
+        tattoo: 15000,
+        hair: 9000
+    };
+
+    function updateFee() {
+        const selectedService = document.getElementById('service').value;
+        const fee = fees[selectedService] || 0;
+        document.getElementById('feeDisplay').value = `₦${fee}`;
+    }
+
+    function copyAccount() {
+        const temp = document.createElement('input');
+        temp.value = '5006210599';
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand('copy');
+        document.body.removeChild(temp);
+        alert("Account number copied!");
+    }
+
+    // Auto-select service from URL
+    window.onload = function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const serviceParam = urlParams.get('service');
+        if (serviceParam) {
+            const serviceSelect = document.getElementById('service');
+            serviceSelect.value = serviceParam;
+        }
+        updateFee();
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2457 @@
+<!doctype html>
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Lashify Artistry</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/tooplate-clean-work.css' %}" rel="stylesheet">
+
+<!--
+
+Tooplate 2132 Clean Work
+
+https://www.tooplate.com/view/2132-clean-work
+
+Free Bootstrap 5 HTML Template
+
+-->
+    </head>
+    
+    <body>
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-12 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-house-fill me-2"></i>
+                            One-Stop Beauty Experience
+                        </p>
+
+                        <p class="d-flex d-lg-block d-md-block d-none me-4 mb-0">
+                            <i class="bi-clock-fill me-2"></i>
+                            <strong class="me-2">Mon - Fri</strong> 8:00 AM - 5:30 PM
+                        </p>
+
+                        <p class="site-header-icon-wrap text-white d-flex mb-0 ms-auto">
+                            <i class="site-header-icon bi-whatsapp me-2"></i>
+
+                            <a href="tel: 110-220-9800" class="text-white">
+                                701 159 8254
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+       <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'images/logo.jpg' %}" class="logo img-fluid" alt="">
+            <span class="ms-2">Lashify Artistry</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'index' %}">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About Us</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+
+                    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                        <li><a class="dropdown-item" href="{% url 'services' %}">Our Services</a></li>
+                        <li><a class="dropdown-item" href="{% url 'coming_soon' %}">Coming Soon</a></li>
+                        <li><a class="dropdown-item" href="{% url 'page_404' %}">Page 404</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                </li>
+
+                <li class="nav-item ms-3">
+                    <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="#">Get started</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <main>
+
+            <section class="banner-section d-flex justify-content-center align-items-end">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-7 col-12">
+                            <h1 class="text-white mb-lg-0">Services Listing</h1>
+                        </div>
+
+                        <div class="col-lg-4 col-12 d-flex justify-content-lg-end align-items-center ms-auto">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Services Listing</li>
+                                </ol>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="services-section section-padding">           
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                <img src="{%static 'images/services/43a3dd9a-f421-4d4c-bf7e-d308b00c5d99.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/b27ecb9d-5c96-46bb-a1f6-ceeae98f7cf7.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            15000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            5 hrs
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Semi Permanent Tattoos</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star"></i>
+                                                    <i class="bi-star"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/gnsl1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/The challenge with short nails is often finding a….jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #6000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            40 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Gel Nails) Short length</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                       
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/5ed43ed0-dbcf-4df4-9fb9-d1d8b09d250c.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/04be0a8c-66cd-48fc-b71a-6b5f84c8c1ef.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #6000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            15- 45 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}"> (Gel Nails) Medium length</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/GNL1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/GNL2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #8000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           15 -45 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Gel Nails) long length</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/ASL1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/ASL2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #10000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           20-50 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Acrylic Nails) Short length Plain acrylic</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/ASLFT1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/ASLFT2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            10000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 -45 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Acrylic Nails) Short length French tips</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+         
+
+            <section class="services-section section-padding section-bg">                
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                <img src="{%static 'images/services/ASLED1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/ASLED2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #12000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            30 - 45 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Acrylic Nails) Short length Extra designs</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                       <img src="{%static 'images/services/AML1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/AML2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                           #14000 upwards
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            30 - 45 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Acrylic Nails) medium length plain acrylicnails</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                         <div class="col-lg-6 col-12">
+                            <div class="services-thumb mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                       <img src="{%static 'images/services/AMLFT1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/AMLFT2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #12000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            30 - 45 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Acrylic Nails) Medium length french tips</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                         <div class="col-lg-6 col-12">
+                            <div class="services-thumb mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                       <img src="{%static 'images/services/AMLED1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/AMLED2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #15000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            30 - 45 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Acrylic Nails) Medium length Extra designs</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                         <div class="col-lg-6 col-12">
+                            <div class="services-thumb mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                       <img src="{%static 'images/services/ALL1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/ALL2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #18000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            30 - 45 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Acrylic Nails) long length plain acrylic nail</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                         <div class="col-lg-6 col-12">
+                            <div class="services-thumb mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                       <img src="{%static 'images/services/ALLFT1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/ALLFT2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #16000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            30 - 45 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Acrylic Nails) long length french tips</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                         <div class="col-lg-6 col-12">
+                            <div class="services-thumb mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                       <img src="{%static 'images/services/ALLED1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/ALLED2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #20000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            30 - 1 hour
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Acrylic Nails) long length Extra designs</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                         <div class="col-lg-6 col-12">
+                            <div class="services-thumb mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                       <img src="{%static 'images/services/AELL1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/AELL2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #25000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            30 - 1 hour
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Acrylic Nails)  extra long length plain</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                         <div class="col-lg-6 col-12">
+                            <div class="services-thumb mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                       <img src="{%static 'images/services/AELLFT1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/AELLFT2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #18000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            30 - 1 hour
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Acrylic Nails)extra long length french tips </a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/AELLED1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/AELLED2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #22000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            1hr -1hr30min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">(Acrylic Nails)extra long length extra design</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/GEMS1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/GEMS2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #30000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           1hr - 1hr30min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Gems</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/CL1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/CL2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            500 each
+                                                        </p>
+
+                                                      
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Classic Lashes</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/HL1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/HL2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #12000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            30min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Hybrid Lashes</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/VL1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/VL2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #18000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                            30min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">volume Lashes</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/mvl1 (1).jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/mvl1 (2).jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #22000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Mega Volume Lashes</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/NP1 (1).jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/NP1 (2).jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #28000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}"> Normal Pedicure</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/FP.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/FP2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #12000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 min - 1hr
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">French Pedicure</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/PP1.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/PP2.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #15000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 min - 1hr
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Paraffin Pedicure</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/4ee64701-7423-45db-ae24-6729eddd3eeb.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/f6450872-cf9f-4e88-ba32-dd14be2376d7.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #18000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 min - 1hr
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Nails Apprenticeship</a>
+                                            </h4>
+
+                                            <p>1 month 50k
+                                                3 month 100k
+                                                6 months 150k
+                                                1 year 200k
+                                            </p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/4ee64701-7423-45db-ae24-6729eddd3eeb.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/f6450872-cf9f-4e88-ba32-dd14be2376d7.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <!-- <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #28000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div> -->
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Lash Apprenticeship</a>
+                                            </h4>
+
+                                            <p>1 month 50k
+                                                3 months 90k
+                                                6 months 120k
+                                                1 year 150k
+                                            </p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/4ee64701-7423-45db-ae24-6729eddd3eeb.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/f6450872-cf9f-4e88-ba32-dd14be2376d7.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <!-- <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #28000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div> -->
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Lash and Nails Apprenticeship</a>
+                                            </h4>
+
+                                            <p>1 month 80k
+                                                3 months 120k
+                                                6 months 180k
+                                                1 year 250k
+                                            </p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/4ee64701-7423-45db-ae24-6729eddd3eeb.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/f6450872-cf9f-4e88-ba32-dd14be2376d7.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <!-- <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #28000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div> -->
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Tattoo</a>
+                                            </h4>
+
+                                            <p>1 week 50k
+                                                2 weeks 80k
+                                                1 month 100k
+                                            </p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/4ee64701-7423-45db-ae24-6729eddd3eeb.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/f6450872-cf9f-4e88-ba32-dd14be2376d7.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <!-- <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #28000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div> -->
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Mega Volume Lashes</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/4ee64701-7423-45db-ae24-6729eddd3eeb.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/f6450872-cf9f-4e88-ba32-dd14be2376d7.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #28000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Mega Volume Lashes</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/4ee64701-7423-45db-ae24-6729eddd3eeb.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/f6450872-cf9f-4e88-ba32-dd14be2376d7.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #28000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Mega Volume Lashes</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/4ee64701-7423-45db-ae24-6729eddd3eeb.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/f6450872-cf9f-4e88-ba32-dd14be2376d7.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #28000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                     <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Mega Volume Lashes</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 col-12">
+                            <div class="services-thumb section-bg mb-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-12">
+                                        <div class="services-image-wrap">
+                                            <a href="{% url 'services-detail' %}">
+                                                 <img src="{%static 'images/services/4ee64701-7423-45db-ae24-6729eddd3eeb.jpg'%}" class="services-image img-fluid" alt="">
+                                                <img src="{%static 'images/services/f6450872-cf9f-4e88-ba32-dd14be2376d7.jpg'%}" class="services-image services-image-hover img-fluid" alt="">
+
+                                                <div class="services-icon-wrap">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-cash me-2"></i>
+                                                            #28000
+                                                        </p>
+
+                                                        <p class="text-white mb-0">
+                                                            <i class="bi-clock-fill me-2"></i>
+                                                           30 min
+                                                        </p>
+                                                    </div>                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                        <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                            <h4 class="services-title mb-1 mb-lg-2">
+                                                <a class="services-title-link" href="{% url 'services-detail' %}">Nail Tech</a>
+                                            </h4>
+
+                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="reviews-icons">
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                    <i class="bi-star-fill"></i>
+                                                </div>
+
+                                                <a href="{% url 'services-detail' %}" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                    <span>Learn More</span>
+
+                                                    <div class="marquee" aria-hidden="true">
+                                                        <div class="marquee__inner">
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                            <span>Learn More</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+ 
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="partners-section">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-lg-12 col-12">
+                            <h4 class="partners-section-title bg-white shadow-lg">Trusted by companies</h4>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="{%static 'images/partners/toprak-leasing.svg'%}" class="partners-image img-fluid">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="{%static 'images/partners/glorix.svg'%}" class="partners-image img-fluid">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="{%static 'images/partners/woocommerce.svg'%}" class="partners-image img-fluid">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="{%static 'images/partners/rolf-leasing.svg'%}" class="partners-image img-fluid">
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <img src="{%static 'images/partners/unilabs.svg'%}" class="partners-image img-fluid">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2">
+                        <div>
+                            <img src="{%static 'images/logo.jpg'%}" class="logo img-fluid" alt="">
+                        </div>
+
+                        <ul class="footer-menu d-flex flex-wrap ms-5">
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">About Us</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Blog</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Reviews</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+                        <h5 class="site-footer-title mb-3">Our Services</h5>
+
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                    Semi Permanent Tattoos
+                                </a>
+                            </li>
+
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                   Facial Treatment
+                                </a>
+                            </li>
+
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                    Lash Extensions
+                                </a>
+                            </li>
+
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                    Pedicure
+                                </a>
+                            </li>
+
+                            <li class="footer-menu-item">
+                                <a href="#" class="footer-menu-link">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
+                                    Manicure
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
+                        <h5 class="site-footer-title mb-3">Office</h5>
+
+                        <p class="text-white d-flex mt-3 mb-2">
+                            <i class="bi-geo-alt-fill me-2"></i>
+                            Chinese fence, davol bus stop iyana iyesi, Sango ota.
+                        </p>
+
+                        <p class="text-white d-flex mb-2">
+                            <i class="bi-telephone-fill me-2"></i>
+
+                            <a href="tel: 110-220-9800" class="site-footer-link">
+                                701-159-8254
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <i class="bi-envelope-fill me-2"></i>
+
+                            <a href="mailto:info@company.com" class="site-footer-link">
+                               Lashifyartistry1@gmail.com
+                            </a>
+                        </p>
+
+                        <ul class="social-icon mt-4">
+                            
+
+                            <li class="social-icon-item">
+                                <a href="https://www.tiktok.com/@lashifyartistry?_t=ZM-8xxmicjvIA9&_r=1" class="social-icon-link button button--skoll">
+                                    <span></span>
+                                    <span class="bi-tiktok"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.instagram.com/lashify_artistry/?utm_source=ig_web_button_share_sheet" class="social-icon-link button button--skoll">
+                                    <span></span>
+                                    <span class="bi-instagram"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-6 mt-3 mt-lg-0 mt-md-0">
+                        <div class="featured-block">
+                            <h5 class="text-white mb-3">Service Hours</h5>
+
+                            <strong class="d-block text-white mb-1">Mon - Fri</strong>
+
+                            <p class="text-white mb-3">8:00 AM - 5:30 PM</p>
+
+                            <strong class="d-block text-white mb-1">Sat</strong>
+
+                            <p class="text-white mb-0">6:00 AM - 2:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <p class="copyright-text mb-0">Copyright © 2036 Clean Work Co., Ltd.</p>
+                        </div>
+                        
+                        <div class="col-lg-6 col-12 text-end">
+                            <p class="copyright-text mb-0">
+                            // Designed by <a href="https://www.tooplate.com" target="_parent">Tooplate</a> //</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.backstretch.min.js' %}"></script>
+<script src="{% static 'js/counter.js' %}"></script>
+<script src="{% static 'js/countdown.js' %}"></script>
+<script src="{% static 'js/init.js' %}"></script>
+<script src="{% static 'js/modernizr.js' %}"></script>
+<script src="{% static 'js/animated-headline.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+    </body>
+</html>
