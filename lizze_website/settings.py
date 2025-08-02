@@ -114,10 +114,18 @@ USE_I18N = True
 USE_TZ = True
 
 
+
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [ BASE_DIR / "Lashify_Artistry" / "static",]
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = []  # Leave this empty if you're only using app-specific static folders
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # For collectstatic
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',  # This is the key one
+]
+
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Media files
