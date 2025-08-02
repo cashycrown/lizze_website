@@ -117,7 +117,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = []  # Leave this empty if you're only using app-specific static folders
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'Lashify_Artistry', 'static')
+]# Leave this empty if you're only using app-specific static folders
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # For collectstatic
 
 STATICFILES_FINDERS = [
