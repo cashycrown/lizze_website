@@ -6,12 +6,13 @@ from django.urls import path
 from django.shortcuts import redirect
 from .models import Booking
 
+
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
     list_display = (
         'name', 'email', 'service', 'date',
         'paid', 'payment_verified', 'is_confirmed',
-        'payment_proof_preview'
+        'payment_proof_thumb', 'verification_slip_thumb'
     )
     list_filter = ('service', 'paid', 'payment_verified', 'date')
     search_fields = ('name', 'email', 'reference')
@@ -19,7 +20,7 @@ class BookingAdmin(admin.ModelAdmin):
     readonly_fields = (
         'reference', 'created_at',
         'payment_proof_preview', 'verification_slip_preview',
-        'send_email_button'  # Add custom button field
+        'send_email_button'
     )
 
     fields = (
@@ -30,6 +31,7 @@ class BookingAdmin(admin.ModelAdmin):
         'reference', 'created_at', 'send_email_button',
     )
 
+    # ---- Custom buttons ----
     def send_email_button(self, obj):
         if obj.id:
             return format_html(
@@ -68,11 +70,13 @@ class BookingAdmin(admin.ModelAdmin):
 
         return super().change_view(request, object_id, form_url, extra_context)
 
+    # ---- Boolean status ----
     def is_confirmed(self, obj):
-        return obj.paid and obj.payment_verified and obj.verification_slip
+        return bool(obj.paid and obj.payment_verified and obj.verification_slip)
     is_confirmed.boolean = True
     is_confirmed.short_description = 'Confirmed'
 
+    # ---- Image previews in detail view ----
     def payment_proof_preview(self, obj):
         if obj.payment_proof:
             return format_html('<img src="{}" style="max-height:150px; border:1px solid #ccc;" />', obj.payment_proof.url)
@@ -85,6 +89,20 @@ class BookingAdmin(admin.ModelAdmin):
         return "No slip"
     verification_slip_preview.short_description = 'Verification Slip'
 
+    # ---- Thumbnails in changelist view ----
+    def payment_proof_thumb(self, obj):
+        if obj.payment_proof:
+            return format_html('<img src="{}" style="max-height:50px;" />', obj.payment_proof.url)
+        return "-"
+    payment_proof_thumb.short_description = 'Proof'
+
+    def verification_slip_thumb(self, obj):
+        if obj.verification_slip:
+            return format_html('<img src="{}" style="max-height:50px;" />', obj.verification_slip.url)
+        return "-"
+    verification_slip_thumb.short_description = 'Slip'
+
+    # ---- Admin actions ----
     @admin.action(description="✅ Mark selected bookings as Verified")
     def mark_as_verified(self, request, queryset):
         updated = queryset.update(payment_verified=True)

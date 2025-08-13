@@ -1,12 +1,19 @@
+from decimal import Decimal
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 import uuid
 from django.shortcuts import render, redirect, get_object_or_404
-from django.core.mail import EmailMessage, send_mail
-from django.contrib import messages
-from django.template.loader import render_to_string
+import logging
+import sib_api_v3_sdk
+from sib_api_v3_sdk.rest import ApiException
 from django.conf import settings
 from .models import Booking
+from django.utils import timezone
 
-# Static Pages
+logger = logging.getLogger(__name__)
+
+# ========== BASIC PAGES ==========
 def index(request):
     return render(request, 'index.html')
 
@@ -20,7 +27,7 @@ def coming_soon(request):
     return render(request, 'coming-soon.html')
 
 def page_404(request):
-    return render(request, 'page-404.html')
+    return render(request, '404.html')
 
 def contact(request):
     return render(request, 'contact.html')
@@ -28,103 +35,210 @@ def contact(request):
 def servicesDetails(request):
     return render(request, 'services-detail.html')
 
+# ========== EMAIL FUNCTION ==========
+def send_booking_email(name, email, service, date, fee, payment_method):
+    configuration = sib_api_v3_sdk.Configuration()
+    configuration.api_key['api-key'] = settings.BREVO_API_KEY
+    api_instance = sib_api_v3_sdk.TransactionalEmailsApi(sib_api_v3_sdk.ApiClient(configuration))
 
-# Pricing Map
-SERVICE_FEES = {
-    'nails': 8000,
-    'pedicure': 6000,
-    'manicure': 5000,
-    'facial': 7000,
-    'lashes': 10000,
-    'tattoo': 15000,
-    'hair': 9000,
-}
+    # Admin notification
+    admin_email = settings.ADMIN_EMAIL  # Add in settings.py
+    admin_content = f"""
+    New booking received:
 
+    Name: {name}
+    Email: {email}
+    Service: {service}
+    Date: {date}
+    Fee: {fee}
+    Payment Method: {payment_method}
+    """
 
-# Booking Creation View
+    # Customer confirmation
+    customer_content = f"""
+    Hi {name},
+
+    Your booking for {service} on {date} is confirmed!
+
+    Thank you,
+    Lashify Artistry
+    """
+
+    try:
+        # Send to admin
+        api_instance.send_transac_email(sib_api_v3_sdk.SendSmtpEmail(
+            to=[{"email": admin_email}],
+            sender={"name": "Lashify Artistry", "email": admin_email},
+            subject=f"New Booking from {name}",
+            text_content=admin_content
+        ))
+
+        # Send to customer
+        api_instance.send_transac_email(sib_api_v3_sdk.SendSmtpEmail(
+            to=[{"email": email}],
+            sender={"name": "Lashify Artistry", "email": admin_email},
+            subject="Booking Confirmation - Lashify Artistry",
+            text_content=customer_content
+        ))
+
+        logger.info(f"Brevo emails sent to admin and {email}")
+    except ApiException as e:
+        logger.error(f"Brevo API error: {e}")
+
+# ========== BOOKINGS ==========
+def send_brevo_email(subject, html_content, recipient_email):
+    """Send transactional email via Brevo API."""
+    configuration = sib_api_v3_sdk.Configuration()
+    configuration.api_key['api-key'] = settings.BREVO_API_KEY
+
+    api_instance = sib_api_v3_sdk.TransactionalEmailsApi(sib_api_v3_sdk.ApiClient(configuration))
+    sender = {"name": "Lashify Artistry", "email": settings.DEFAULT_FROM_EMAIL}
+    to = [{"email": recipient_email}]
+
+    email = sib_api_v3_sdk.SendSmtpEmail(
+        to=to,
+        sender=sender,
+        subject=subject,
+        html_content=html_content
+    )
+
+    try:
+        api_instance.send_transac_email(email)
+        logger.info(f"Brevo email sent to {recipient_email}")
+    except ApiException as e:
+        logger.error(f"Brevo API error: {e}")
+
+@csrf_exempt
 def create_booking(request):
     if request.method == 'POST':
         name = request.POST.get('name')
         email = request.POST.get('email')
         service = request.POST.get('service')
-        custom_details = request.POST.get('custom_details', '')
         date = request.POST.get('date')
-        proof = request.FILES.get('payment_proof')
+        fee = request.POST.get('fee').replace("₦",'')
+        print(f"fee received from frontend  {fee}")
+        payment_method = request.POST.get('payment_method')
+        image_proof = request.FILES.get("payment_proof")
 
-        # Fee & Reference
-        fee = SERVICE_FEES.get(service, 5000)
-        reference = str(uuid.uuid4()).replace('-', '')[:10].upper()
-
-        # Save Booking
         booking = Booking.objects.create(
             name=name,
             email=email,
             service=service,
-            custom_details=custom_details,
             date=date,
-            payment_proof=proof,
-            payment_method='manual',
-            fee=fee,
-            reference=reference,
-            paid=False
+            fee=Decimal(fee),
+            #payment_method=payment_method,
+            created_at=timezone.now(),
+            payment_proof=image_proof
         )
+        
+        try:
+            configuration = sib_api_v3_sdk.Configuration()
+            configuration.api_key['api-key'] = settings.BREVO_API_KEY
 
-        # 📨 Email to Client (Booking Acknowledgement)
-        client_subject = '🎉 Booking Received - Lashify Artistry'
-        client_message = render_to_string('emails/confirmation_email_old.html', {
-            'booking': booking,
-            'site_name': 'Lashify Artistry',
-        })
-        client_email = EmailMessage(client_subject, client_message, to={email})
-        client_email.content_subtype = 'html'
-        print('SENDING TO CLIENT')
-        print(f'Email to recieve confirmation {email}')
-        client_email.send(fail_silently=True)
+            api_instance = sib_api_v3_sdk.TransactionalEmailsApi(sib_api_v3_sdk.ApiClient(configuration))
 
-        # 📨 Email to Admin (Notification)
-        admin_subject = f'📩 New Booking - {name} | {booking.get_service_display()}'
-        admin_message = render_to_string('emails/admin_notification.html', {
-            'booking': booking,
-        })
-        admin_email = EmailMessage(admin_subject, admin_message, to=['olamideadedokun36@gmail.com'])
-        admin_email.content_subtype = 'html'
+            # Admin notification
+            admin_email = sib_api_v3_sdk.SendSmtpEmail(
+                to=[{"email": settings.ADMIN_EMAIL}],
+                sender={"email": settings.DEFAULT_FROM_EMAIL, "name": "Lashify Artistry"},
+                subject=f"New Booking - {service}",
+                html_content=f"""
+                <h3>New Booking Received</h3>
+                <p><strong>Name:</strong> {name}</p>
+                <p><strong>Email:</strong> {email}</p>
+                <p><strong>Service:</strong> {service}</p>
+                <p><strong>Date:</strong> {date}</p>
+                <p><strong>Fee:</strong> ₦{fee}</p>
+                <p><strong>Payment Method:</strong> {payment_method}</p>
+                """
+            )
+            api_instance.send_transac_email(admin_email)
 
-        # Attach payment proof if available
-        if booking.payment_proof and booking.payment_proof.path:
-            try:
-                admin_email.attach_file(booking.payment_proof.path)
-            except Exception as e:
-                print(f"Error attaching file: {e}")  # Optional: log this in production
+            # Customer confirmation
+            customer_email = sib_api_v3_sdk.SendSmtpEmail(
+                to=[{"email": email}],
+                sender={"email": settings.DEFAULT_FROM_EMAIL, "name": "Lashify Artistry"},
+                subject="Your Booking Confirmation",
+                html_content=f"""
+                <h3>Hi {name},</h3>
+                <p>Thank you for booking with Lashify Artistry!</p>
+                <p><strong>Service:</strong> {service}</p>
+                <p><strong>Date:</strong> {date}</p>
+                <p><strong>Booking Fee:</strong> ₦{fee}</p>
+                <p>We look forward to seeing you.</p>
+                """
+            )
+            api_instance.send_transac_email(customer_email)
 
-        admin_email.send(fail_silently=False)
+        except ApiException as e:
+            logger.error(f"Brevo API error: {e}")
+        except Exception as e:
+            logger.error(f"Unexpected error while sending emails: {e}")
+        
+        return render(request, 'booking_success.html', {'booking': booking})
 
-        return redirect('booking_success', reference=reference)
+    return redirect('home')
 
-    return render(request, 'services-detail.html')
-
-
-# Booking Success Page
 def booking_success(request, reference):
-    booking = get_object_or_404(Booking, reference=reference)
-    return render(request, 'booking_success.html', {'booking': booking})
+    return render(request, 'booking-success.html', {'reference': reference})
 
-
-# Customer Booking Tracker
 def my_bookings(request):
-    email = request.GET.get('email')
-    bookings = Booking.objects.filter(email=email)
-    return render(request, 'my_bookings.html', {'bookings': bookings})
-
+    bookings = Booking.objects.all().order_by('-date')
+    return render(request, 'my-bookings.html', {'bookings': bookings})
 
 def send_customer_confirmation(request, token):
     booking = get_object_or_404(Booking, token=token)
+    send_booking_email(booking.name, booking.email, booking.service, booking.date, booking.fee, booking.payment_method)
+    return HttpResponse("Booking confirmed and email sent.")
+def send_booking_email(name, email, service, date, fee, payment_method):
+    if not settings.BREVO_API_KEY:
+        logger.error("BREVO_API_KEY is not set")
+        return
 
-    subject = "Your Booking Has Been Confirmed"
-    message = f"Dear {booking.full_name},\n\nYour booking for {booking.service_type} on {booking.booking_date} has been confirmed.\n\nThank you for choosing us!"
-    from_email = settings.DEFAULT_FROM_EMAIL
-    recipient_list = [booking.email]
+    configuration = sib_api_v3_sdk.Configuration()
+    configuration.api_key['api-key'] = settings.BREVO_API_KEY
+    api_instance = sib_api_v3_sdk.TransactionalEmailsApi(sib_api_v3_sdk.ApiClient(configuration))
 
-    send_mail(subject, message, from_email, recipient_list)
+    admin_email = settings.ADMIN_EMAIL
+    admin_content = f"""
+    New booking received:
 
-    messages.success(request, f"Confirmation email sent to {booking.email}")
-    return redirect('admin:index')  # Or any page you want to redirect to
+    Name: {name}
+    Email: {email}
+    Service: {service}
+    Date: {date}
+    Fee: {fee}
+    Payment Method: {payment_method}
+    """
+
+    customer_content = f"""
+    Hi {name},
+
+    Your booking for {service} on {date} is confirmed!
+
+    Thank you,
+    Lashify Artistry
+    """
+
+    try:
+        # Send to admin
+        api_instance.send_transac_email(sib_api_v3_sdk.SendSmtpEmail(
+            to=[{"email": admin_email}],
+            sender={"name": "Lashify Artistry", "email": admin_email},
+            subject=f"New Booking from {name}",
+            text_content=admin_content
+        ))
+
+        # Send to customer
+        api_instance.send_transac_email(sib_api_v3_sdk.SendSmtpEmail(
+            to=[{"email": email}],
+            sender={"name": "Lashify Artistry", "email": admin_email},
+            subject="Booking Confirmation - Lashify Artistry",
+            text_content=customer_content
+        ))
+
+        logger.info(f"Brevo emails sent to admin and {email}")
+
+    except ApiException as e:
+        logger.error(f"Brevo API error: {e}")
+

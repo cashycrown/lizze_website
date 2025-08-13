@@ -1,11 +1,27 @@
 from django.db import models
-from django.core.mail import EmailMessage, send_mail
+from django.core.mail import EmailMessage
 from django.conf import settings
 from django.contrib.sites.models import Site
 from django.urls import reverse
 import uuid
+import random
+import string
+
+
+def generate_reference_code():
+    """
+    Generates a random reference code consisting of uppercase letters and digits.
+    Default length is 10 characters.
+    """
+    characters = string.ascii_uppercase + string.digits
+    return ''.join(random.choices(characters, k=16))
+
 
 def send_admin_booking_notification(booking):
+    """
+    Send an email to admin when a new booking is created.
+    Uses Brevo SMTP (configured in settings.py).
+    """
     try:
         current_site = Site.objects.get_current()
         confirm_url = f"http://{current_site.domain}{reverse('send_customer_confirmation', args=[booking.confirmation_token])}"
@@ -23,27 +39,67 @@ Click below to verify and send confirmation to the customer:
 🔗 {confirm_url}
 """
 
-        send_mail(
+        email = EmailMessage(
             subject="📥 New Booking Notification - Lashify Artistry",
-            message=message,
+            body=message,
             from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=["admin@example.com"],  # Update with your real admin email
-            fail_silently=False,
+            to=["admin@example.com"],  # Change to your real admin email
         )
+        email.send(fail_silently=False)
+
     except Exception as e:
-        print("Failed to send admin notification:", e)
+        print("❌ Failed to send admin notification:", e)
 
 
 class Booking(models.Model):
+    # models.py
+
     SERVICE_CHOICES = [
-        ('nails', 'Nail Tech'),
-        ('pedicure', 'Pedicure'),
-        ('manicure', 'Manicure'),
-        ('facial', 'Facial Treatment'),
-        ('lashes', 'Lash Extension'),
-        ('tattoo', 'Semi-Permanent Tattoo'),
-        ('hair', 'Hair Styling'),
+    # Tattoos
+    ('tattoo', 'Semi Permanent Tattoos'),
+
+    # Gel Nails
+    ('GNSL_nails', 'Gel nails (short length)'),
+    ('GNML_nails', 'Gel nails (medium length)'),
+    ('GNLL_nails', 'Gel nails (long length)'),
+
+    # Acrylic Nails - Short
+    ('ANSLP_nails', 'Acrylic nails short length plain'),
+    ('ANSLFT_nails', 'Acrylic nails short length french tips'),
+    ('ANSLED_nails', 'Acrylic nails short length extra designs'),
+
+    # Acrylic Nails - Medium
+    ('ANMLP_nails', 'Acrylic nails medium length plain'),
+    ('ANMLFT_nails', 'Acrylic nails medium length french tips'),
+    ('ANMLED_nails', 'Acrylic nails medium length extra designs'),
+
+    # Acrylic Nails - Long
+    ('ANLLP_nails', 'Acrylic nails long length plain'),
+    ('ANLLFT_nails', 'Acrylic nails long length french tips'),
+    ('ANLLED_nails', 'Acrylic nails long length extra designs'),
+
+    # Acrylic Nails - Extra Long
+    ('ANELLP_nails', 'Acrylic nails extra long length plain'),
+    ('ANELLFT_nails', 'Acrylic nails extra long length french tips'),
+    ('ANELLED_nails', 'Acrylic nails extra long length extra designs'),
+
+    # Lashes
+    ('C_lashes', 'Classic Lashes'),
+    ('H_lashes', 'Hybrid Lashes'),
+    ('V_lashes', 'Volume Lashes'),
+    ('MV_lashes', 'Mega Volume Lashes'),
+
+    # Pedicures
+    ('N_pedicure', 'Normal Pedicure'),
+    ('F_pedicure', 'French Pedicure'),
+    ('P_pedicure', 'Paraffin Pedicure'),
+
+    # Others
+    ('hair', 'Hair Styling'),
+    ('manicure', 'Manicure'),
+    ('facial', 'Facial Treatment'),
     ]
+
 
     PAYMENT_METHODS = [
         ('manual', 'Manual Transfer'),
@@ -59,7 +115,7 @@ class Booking(models.Model):
     payment_method = models.CharField(max_length=10, choices=PAYMENT_METHODS, default='manual')
     payment_verified = models.BooleanField(default=False)
     payment_proof = models.ImageField(upload_to='proofs/', blank=True, null=True)
-    reference = models.CharField(max_length=100, unique=True)
+    reference = models.CharField(max_length=100, unique=True, default=generate_reference_code)
     paid = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     verification_notes = models.TextField(blank=True, null=True)
@@ -68,10 +124,9 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.get_service_display()} on {self.date}"
-    
-    '''
+
     def save(self, *args, **kwargs):
-        is_new = self.pk is None  # Check if it's a new booking
+        is_new = self.pk is None
         send_verification_email = False
 
         if self.pk:
@@ -79,35 +134,38 @@ class Booking(models.Model):
             if not previous.paid and self.paid:
                 send_verification_email = True
 
-        super().save(*args, **kwargs)  # Save booking
+        super().save(*args, **kwargs)
 
-        # 📨 Send verification email if just paid
+        # ✅ Send payment verification email to customer
         if send_verification_email and self.email and self.verification_slip:
-            email = EmailMessage(
-                subject="✅ Payment Verified - Lashify Artistry",
-                body=f"""
-                    Hi {self.name},
+            try:
+                email = EmailMessage(
+                    subject="✅ Payment Verified - Lashify Artistry",
+                    body=f"""
+Hi {self.name},
 
-                    Your payment for {self.get_service_display()} has been successfully verified.
+Your payment for {self.get_service_display()} has been successfully verified.
 
-                    📅 Appointment Date: {self.date}
-                    💵 Fee: ₦{self.fee}
-                    📌 Reference: {self.reference}
+📅 Appointment Date: {self.date}
+💵 Fee: ₦{self.fee}
+📌 Reference: {self.reference}
 
-                    Attached is your proof of verification.
+Attached is your proof of verification.
 
-                    We look forward to seeing you!
+We look forward to seeing you!
 
-                    With love,  
-                    Lashify Artistry 💖
+With love,  
+Lashify Artistry 💖
                     """,
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            to=[self.email],
-            )
-            email.attach_file(self.verification_slip.path)
-            email.send(fail_silently=True)
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    to=[self.email],
+                )
+                email.attach_file(self.verification_slip.path)
+                email.send(fail_silently=False)
+            except Exception as e:
+                print("❌ Failed to send payment verification email:", e)
 
-        # 📧 Send admin notification if it's a new booking
-        # if is_new:
-        #     send_admin_booking_notification(self)
-    '''
+        # 📧 Send admin notification for new bookings
+        if is_new:
+            send_admin_booking_notification(self)
+

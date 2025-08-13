@@ -1,0 +1,1453 @@
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\lizze_website\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\lizze_website\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\lizze_website\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\lizze_website\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\lizze_website\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\lizze_website\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/images/coffe-shop-with-wooden-walls-unfocused.jpg
+Not Found: /images/slideshow/afro-woman-cleaning-window-with-rag-home.jpg
+Not Found: /images/slideshow/afro-woman-holding-bucket-with-cleaning-items.jpg
+Not Found: /images/slideshow/unrecognizable-cleaner-walking-into-hotel-room-with-tools-detergents.jpg
+Not Found: /static/images/favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /create-booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py", line 127, in create_booking
+    created_at=timezone.now()
+               ^^^^^^^^
+NameError: name 'timezone' is not defined
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Watching for file changes with StatReloader
+Internal Server Error: /create-booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py", line 127, in create_booking
+    created_at=timezone.now()
+               ^^^^^^^^
+NameError: name 'timezone' is not defined
+Internal Server Error: /create-booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py", line 127, in create_booking
+    created_at=timezone.now()
+               ^^^^^^^^
+NameError: name 'timezone' is not defined
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+C:\Users\USER\Desktop\web_gig\lizze_website\lizze_website\settings.py changed, reloading.
+C:\Users\USER\Desktop\web_gig\lizze_website\lizze_website\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /create-booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py", line 127, in create_booking
+    created_at=timezone.now()
+               ^^^^^^^^
+NameError: name 'timezone' is not defined
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /create-booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: Lashify_Artistry_booking.fee
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py", line 120, in create_booking
+    booking = Booking.objects.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py", line 87, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: Lashify_Artistry_booking.fee
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /create-booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: Lashify_Artistry_booking.fee
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py", line 121, in create_booking
+    booking = Booking.objects.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py", line 87, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: Lashify_Artistry_booking.fee
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Internal Server Error: /create-booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: Lashify_Artistry_booking.fee
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py", line 121, in create_booking
+    booking = Booking.objects.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py", line 87, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: Lashify_Artistry_booking.fee
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Internal Server Error: /create-booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: Lashify_Artistry_booking.payment_method
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py", line 122, in create_booking
+    booking = Booking.objects.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py", line 87, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: Lashify_Artistry_booking.payment_method
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Brevo API error: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 13 Aug 2025 14:35:11 GMT', 'Content-Type': 'application/json', 'Content-Length': '72', 'Connection': 'keep-alive', 'CF-RAY': '96e8f003eccef160-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '4f7542a2-d63a-9061-8e55-d60931a3ae68', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '4', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare'})
+HTTP response body: {"message":"authentication not found in headers","code":"unauthorized"}
+
+
+Internal Server Error: /create-booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py", line 177, in create_booking
+    return render(request, 'booking_confirmation.html', {'booking': booking})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: booking_confirmation.html
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Internal Server Error: /create-booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: Lashify_Artistry_booking.reference
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py", line 122, in create_booking
+    booking = Booking.objects.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py", line 87, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: Lashify_Artistry_booking.reference
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Brevo API error: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 13 Aug 2025 14:48:25 GMT', 'Content-Type': 'application/json', 'Content-Length': '72', 'Connection': 'keep-alive', 'CF-RAY': '96e903658d1ef0d3-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '910bf559-0e74-9a78-9db0-7d075e607406', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '4', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare'})
+HTTP response body: {"message":"authentication not found in headers","code":"unauthorized"}
+
+
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /images/slideshow/afro-woman-cleaning-window-with-rag-home.jpg
+Not Found: /images/slideshow/afro-woman-holding-bucket-with-cleaning-items.jpg
+Not Found: /images/slideshow/unrecognizable-cleaner-walking-into-hotel-room-with-tools-detergents.jpg
+Not Found: /media/verification_slips/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Not Found: /media/proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Internal Server Error: /admin/Lashify_Artistry/booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\library.py", line 359, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in __init__
+    super().__init__(*items)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 235, in items_for_result
+    result_repr = display_for_value(value, empty_value_display, boolean)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\utils.py", line 472, in display_for_value
+    return _boolean_icon(value)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 183, in _boolean_icon
+    "admin/img/icon-%s.svg" % {True: "yes", False: "no", None: "unknown"}[field_val]
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: <ImageFieldFile: verification_slips/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg>
+Internal Server Error: /admin/Lashify_Artistry/booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\library.py", line 359, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in __init__
+    super().__init__(*items)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 235, in items_for_result
+    result_repr = display_for_value(value, empty_value_display, boolean)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\utils.py", line 472, in display_for_value
+    return _boolean_icon(value)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 183, in _boolean_icon
+    "admin/img/icon-%s.svg" % {True: "yes", False: "no", None: "unknown"}[field_val]
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: <ImageFieldFile: verification_slips/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg>
+Internal Server Error: /admin/Lashify_Artistry/booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\library.py", line 359, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in __init__
+    super().__init__(*items)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 235, in items_for_result
+    result_repr = display_for_value(value, empty_value_display, boolean)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\utils.py", line 472, in display_for_value
+    return _boolean_icon(value)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 183, in _boolean_icon
+    "admin/img/icon-%s.svg" % {True: "yes", False: "no", None: "unknown"}[field_val]
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: <ImageFieldFile: verification_slips/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg>
+Not Found: /media/proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Not Found: /media/verification_slips/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Internal Server Error: /admin/Lashify_Artistry/booking/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\template\library.py", line 359, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in __init__
+    super().__init__(*items)
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 235, in items_for_result
+    result_repr = display_for_value(value, empty_value_display, boolean)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\utils.py", line 472, in display_for_value
+    return _boolean_icon(value)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\web_gig\website\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 183, in _boolean_icon
+    "admin/img/icon-%s.svg" % {True: "yes", False: "no", None: "unknown"}[field_val]
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: <ImageFieldFile: verification_slips/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg>
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /media/proofs/person-taking-care-office_CTtEoQ6.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_EXzZeUI.jpg
+Not Found: /media/proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove_Kp6pMtD.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_QdzpMN3.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_kZW2zxx.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_9rP1KE9.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_7ojhiAZ.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_iZfCC55.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_mwJ4MLN.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_pfhRPzC.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_ETkYXyF.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_oD6OXpj.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service.jpg
+Not Found: /media/proofs/people-taking-care-office-cleaning.jpg
+Not Found: /media/proofs/close-up-mop-cleaning-industrial-plant-floor.jpg
+Not Found: /media/proofs/person-taking-care-office.jpg
+Not Found: /media/proofs/close-up-mop-cleaning-industrial-plant-floor_3xEA2xq.jpg
+Not Found: /media/proofs/person-taking-care-office_IDgg4O1.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_O3pDhyL.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_Vlgfm5n.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_fOnjmcK.jpg
+Not Found: /media/proofs/man-polishing-car-inside.jpg
+Not Found: /media/verification_slips/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Not Found: /media/proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_AqBCEAr.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_y1gWy1K.jpg
+Not Found: /media/proofs/man-polishing-car-inside_tEe2kxk.jpg
+Not Found: /media/proofs/man-polishing-car-inside_gWUuq8Q.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_JXbYaG4.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_RO02Kad.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_tzuqFjh.jpg
+Not Found: /media/proofs/disinfecting-home_Vy3WpGM.jpg
+Not Found: /media/proofs/disinfecting-home_jFVmvxU.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_Z7zgtK6.jpg
+Not Found: /media/proofs/disinfecting-home_TCRqq88.jpg
+Not Found: /media/proofs/disinfecting-home_RpzHiX7.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection.jpg
+Not Found: /media/proofs/disinfecting-home_EcNc5h8.jpg
+Not Found: /media/proofs/coffe-shop-with-wooden-walls-unfocused_HJEOf8E.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card_bQNrF6J.jpg
+Not Found: /media/proofs/disinfecting-home.jpg
+Not Found: /media/proofs/coffe-shop-with-wooden-walls-unfocused.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card_K2w9AfZ.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card.jpg
+Not Found: /media/proofs/bubbles_uob2UXr.png
+Not Found: /media/proofs/bubbles_JCshQQM.png
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg
+Not Found: /media/proofs/bubbles_ZYQGfeV.png
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Brevo API error: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 13 Aug 2025 15:04:07 GMT', 'Content-Type': 'application/json', 'Content-Length': '72', 'Connection': 'keep-alive', 'CF-RAY': '96e91a6489bdf844-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': 'b10e46c8-dd85-9591-aefc-e53f46988bac', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '5', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare'})
+HTTP response body: {"message":"authentication not found in headers","code":"unauthorized"}
+
+
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /media/proofs/person-taking-care-office_CTtEoQ6.jpg
+Not Found: /media/proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove_Kp6pMtD.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_EXzZeUI.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_7ojhiAZ.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_kZW2zxx.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_QdzpMN3.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_9rP1KE9.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_iZfCC55.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_mwJ4MLN.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_pfhRPzC.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_oD6OXpj.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_ETkYXyF.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service.jpg
+Not Found: /media/proofs/people-taking-care-office-cleaning.jpg
+Not Found: /media/proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Not Found: /media/verification_slips/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Not Found: /media/proofs/person-taking-care-office_IDgg4O1.jpg
+Not Found: /media/proofs/person-taking-care-office.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_O3pDhyL.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_Vlgfm5n.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_fOnjmcK.jpg
+Not Found: /media/proofs/close-up-mop-cleaning-industrial-plant-floor.jpg
+Not Found: /media/proofs/close-up-mop-cleaning-industrial-plant-floor_3xEA2xq.jpg
+Not Found: /media/proofs/man-polishing-car-inside.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker.jpg
+Not Found: /media/proofs/man-polishing-car-inside_tEe2kxk.jpg
+Not Found: /media/proofs/man-polishing-car-inside_gWUuq8Q.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_JXbYaG4.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_y1gWy1K.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_AqBCEAr.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_RO02Kad.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_Z7zgtK6.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_tzuqFjh.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection.jpg
+Not Found: /media/proofs/disinfecting-home_RpzHiX7.jpg
+Not Found: /media/proofs/disinfecting-home_jFVmvxU.jpg
+Not Found: /media/proofs/disinfecting-home_TCRqq88.jpg
+Not Found: /media/proofs/disinfecting-home_Vy3WpGM.jpg
+Not Found: /media/proofs/disinfecting-home_EcNc5h8.jpg
+Not Found: /media/proofs/disinfecting-home.jpg
+Not Found: /media/proofs/coffe-shop-with-wooden-walls-unfocused_HJEOf8E.jpg
+Not Found: /media/proofs/coffe-shop-with-wooden-walls-unfocused.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card_bQNrF6J.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card_K2w9AfZ.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card.jpg
+Not Found: /media/proofs/bubbles_JCshQQM.png
+Not Found: /media/proofs/bubbles_ZYQGfeV.png
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg
+Not Found: /media/proofs/bubbles_uob2UXr.png
+Not Found: /media/proofs/person-taking-care-office_CTtEoQ6.jpg
+Not Found: /media/proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove_Kp6pMtD.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_EXzZeUI.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_7ojhiAZ.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_QdzpMN3.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_kZW2zxx.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_iZfCC55.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_9rP1KE9.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_mwJ4MLN.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_ETkYXyF.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_oD6OXpj.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_pfhRPzC.jpg
+Not Found: /media/proofs/people-taking-care-office-cleaning.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service.jpg
+Not Found: /media/proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Not Found: /media/verification_slips/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Not Found: /media/proofs/person-taking-care-office_IDgg4O1.jpg
+Not Found: /media/proofs/person-taking-care-office.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_O3pDhyL.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_Vlgfm5n.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_fOnjmcK.jpg
+Not Found: /media/proofs/close-up-mop-cleaning-industrial-plant-floor_3xEA2xq.jpg
+Not Found: /media/proofs/close-up-mop-cleaning-industrial-plant-floor.jpg
+Not Found: /media/proofs/man-polishing-car-inside.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_JXbYaG4.jpg
+Not Found: /media/proofs/man-polishing-car-inside_tEe2kxk.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker.jpg
+Not Found: /media/proofs/man-polishing-car-inside_gWUuq8Q.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_AqBCEAr.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_y1gWy1K.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_RO02Kad.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_tzuqFjh.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_Z7zgtK6.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection.jpg
+Not Found: /media/proofs/disinfecting-home_RpzHiX7.jpg
+Not Found: /media/proofs/disinfecting-home_jFVmvxU.jpg
+Not Found: /media/proofs/disinfecting-home_TCRqq88.jpg
+Not Found: /media/proofs/disinfecting-home_Vy3WpGM.jpg
+Not Found: /media/proofs/disinfecting-home_EcNc5h8.jpg
+Not Found: /media/proofs/disinfecting-home.jpg
+Not Found: /media/proofs/coffe-shop-with-wooden-walls-unfocused_HJEOf8E.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card_bQNrF6J.jpg
+Not Found: /media/proofs/coffe-shop-with-wooden-walls-unfocused.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card_K2w9AfZ.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card.jpg
+Not Found: /media/proofs/bubbles_uob2UXr.png
+Not Found: /media/proofs/bubbles_JCshQQM.png
+Not Found: /media/proofs/bubbles_ZYQGfeV.png
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Brevo API error: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 13 Aug 2025 15:55:14 GMT', 'Content-Type': 'application/json', 'Content-Length': '72', 'Connection': 'keep-alive', 'CF-RAY': '96e96548c8cd3d11-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': 'b651926d-6f14-9c4f-b554-d6ae920e4be9', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '5', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare'})
+HTTP response body: {"message":"authentication not found in headers","code":"unauthorized"}
+
+
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\lizze_website\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\lizze_website\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\lizze_website\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card.jpg
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /media/proofs/person-taking-care-office_CTtEoQ6.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_EXzZeUI.jpg
+Not Found: /media/proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove_Kp6pMtD.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_9rP1KE9.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_kZW2zxx.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_iZfCC55.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_7ojhiAZ.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_QdzpMN3.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_mwJ4MLN.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker.jpg
+Not Found: /media/proofs/close-up-mop-cleaning-industrial-plant-floor_3xEA2xq.jpg
+Not Found: /media/proofs/person-taking-care-office_IDgg4O1.jpg
+Not Found: /media/proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Not Found: /media/proofs/close-up-mop-cleaning-industrial-plant-floor.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_JXbYaG4.jpg
+Not Found: /media/proofs/person-taking-care-office.jpg
+Not Found: /media/proofs/man-polishing-car-inside_tEe2kxk.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_ETkYXyF.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_oD6OXpj.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_O3pDhyL.jpg
+Not Found: /media/proofs/people-taking-care-office-cleaning.jpg
+Not Found: /media/proofs/man-polishing-car-inside.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_Vlgfm5n.jpg
+Not Found: /media/verification_slips/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Not Found: /media/proofs/man-polishing-car-inside_gWUuq8Q.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_fOnjmcK.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_y1gWy1K.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_pfhRPzC.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_RO02Kad.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_AqBCEAr.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_tzuqFjh.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_Z7zgtK6.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection.jpg
+Not Found: /media/proofs/disinfecting-home_RpzHiX7.jpg
+Not Found: /media/proofs/disinfecting-home_jFVmvxU.jpg
+Not Found: /media/proofs/disinfecting-home_Vy3WpGM.jpg
+Not Found: /media/proofs/disinfecting-home_TCRqq88.jpg
+Not Found: /media/proofs/disinfecting-home_EcNc5h8.jpg
+Not Found: /media/proofs/disinfecting-home.jpg
+Not Found: /media/proofs/coffe-shop-with-wooden-walls-unfocused.jpg
+Not Found: /media/proofs/coffe-shop-with-wooden-walls-unfocused_HJEOf8E.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card_bQNrF6J.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card_K2w9AfZ.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card.jpg
+Not Found: /media/proofs/bubbles_JCshQQM.png
+Not Found: /media/proofs/bubbles_uob2UXr.png
+Not Found: /media/proofs/bubbles_ZYQGfeV.png
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /media/proofs/person-taking-care-office_CTtEoQ6.jpg
+Not Found: /media/proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove_Kp6pMtD.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_QdzpMN3.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_EXzZeUI.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_kZW2zxx.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_9rP1KE9.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_iZfCC55.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_7ojhiAZ.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_pfhRPzC.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_mwJ4MLN.jpg
+Not Found: /media/proofs/people-taking-care-office-cleaning.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_ETkYXyF.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_oD6OXpj.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service.jpg
+Not Found: /media/proofs/person-taking-care-office.jpg
+Not Found: /media/verification_slips/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Not Found: /media/proofs/person-taking-care-office_IDgg4O1.jpg
+Not Found: /media/proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_O3pDhyL.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_Vlgfm5n.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_fOnjmcK.jpg
+Not Found: /media/proofs/close-up-mop-cleaning-industrial-plant-floor_3xEA2xq.jpg
+Not Found: /media/proofs/close-up-mop-cleaning-industrial-plant-floor.jpg
+Not Found: /media/proofs/man-polishing-car-inside_gWUuq8Q.jpg
+Not Found: /media/proofs/man-polishing-car-inside_tEe2kxk.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_JXbYaG4.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_y1gWy1K.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_AqBCEAr.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_RO02Kad.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_tzuqFjh.jpg
+Not Found: /media/proofs/disinfecting-home_RpzHiX7.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_Z7zgtK6.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection.jpg
+Not Found: /media/proofs/disinfecting-home_TCRqq88.jpg
+Not Found: /media/proofs/disinfecting-home_jFVmvxU.jpg
+Not Found: /media/proofs/disinfecting-home_Vy3WpGM.jpg
+Not Found: /media/proofs/disinfecting-home_EcNc5h8.jpg
+Not Found: /media/proofs/disinfecting-home.jpg
+Not Found: /media/proofs/coffe-shop-with-wooden-walls-unfocused_HJEOf8E.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card_K2w9AfZ.jpg
+Not Found: /media/proofs/bubbles_JCshQQM.png
+Not Found: /media/proofs/coffe-shop-with-wooden-walls-unfocused.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card_bQNrF6J.jpg
+Not Found: /media/proofs/bubbles_uob2UXr.png
+Not Found: /media/proofs/bubbles_ZYQGfeV.png
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Desktop\web_gig\lizze_website\Lashify_Artistry\models.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Brevo API error: (403)
+Reason: Forbidden
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 13 Aug 2025 16:33:45 GMT', 'Content-Type': 'application/json', 'Content-Length': '164', 'Connection': 'keep-alive', 'CF-RAY': '96e99db20c670202-WAW', 'access-control-allow-credentials': 'true', 'sib-request-id': '5870f107-824e-915f-9a3d-99c01d0ef70c', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-sib-auth': '{"ln":"en","dbKey":"1yJ7MXgswQUPZLBH","dbName":"e_ydm9sfrz81n4","active":0,"status":"disabled","username":"93ccac001@smtp-brevo.com","pwd":"1yJ7MXgswQUPZLBH","email":"olamideadedokun36@gmail.com","keyName":"genlash","mSmsDisabled":"1","reseller":"","reportPushedToGCS":"","tz":"Europe/Paris","pricingVersion":"v4","createdDate":"2025-08-02 21:30:46","token":"","last_used_at":"2025-08-13","api_key":"ocWVZz","path":"/v3/smtp/email","request_method":"POST"}', 'x-envoy-upstream-service-time': '82', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare'})
+HTTP response body: {"message":"Unable to send email. Your SMTP account is not yet activated. Please contact us at contact@brevo.com to request activation","code":"permission_denied"}
+
+
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_EXzZeUI.jpg
+Not Found: /media/proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove_Kp6pMtD.jpg
+Not Found: /media/proofs/person-taking-care-office_CTtEoQ6.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_QdzpMN3.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_kZW2zxx.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_9rP1KE9.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_7ojhiAZ.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_iZfCC55.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_mwJ4MLN.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_ETkYXyF.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_oD6OXpj.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service_pfhRPzC.jpg
+Not Found: /media/proofs/man-polishing-car-inside-car-service.jpg
+Not Found: /media/proofs/people-taking-care-office-cleaning.jpg
+Not Found: /media/proofs/person-taking-care-office_IDgg4O1.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_O3pDhyL.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_fOnjmcK.jpg
+Not Found: /media/verification_slips/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker_Vlgfm5n.jpg
+Not Found: /media/proofs/person-taking-care-office.jpg
+Not Found: /media/proofs/close-up-mop-cleaning-industrial-plant-floor_3xEA2xq.jpg
+Not Found: /media/proofs/close-up-mop-cleaning-industrial-plant-floor.jpg
+Not Found: /media/proofs/woman-holding-rag-detergent-cleaning-cooker.jpg
+Not Found: /media/proofs/man-polishing-car-inside_gWUuq8Q.jpg
+Not Found: /media/proofs/man-polishing-car-inside_tEe2kxk.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_JXbYaG4.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_y1gWy1K.jpg
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_AqBCEAr.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_Z7zgtK6.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_tzuqFjh.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection_RO02Kad.jpg
+Not Found: /media/proofs/essential-goods-during-epidemic-prevention-protection.jpg
+Not Found: /media/proofs/disinfecting-home_RpzHiX7.jpg
+Not Found: /media/proofs/disinfecting-home_jFVmvxU.jpg
+Not Found: /media/proofs/disinfecting-home_Vy3WpGM.jpg
+Not Found: /media/proofs/disinfecting-home_TCRqq88.jpg
+Not Found: /media/proofs/disinfecting-home_EcNc5h8.jpg
+Not Found: /media/proofs/disinfecting-home.jpg
+Not Found: /media/proofs/coffe-shop-with-wooden-walls-unfocused_HJEOf8E.jpg
+Not Found: /media/proofs/coffe-shop-with-wooden-walls-unfocused.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card_bQNrF6J.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card_K2w9AfZ.jpg
+Not Found: /media/proofs/cleaning-concept-with-man-showing-business-card.jpg
+Not Found: /media/proofs/bubbles_JCshQQM.png
+Not Found: /media/proofs/bubbles_uob2UXr.png
+Not Found: /media/proofs/bubbles_ZYQGfeV.png
+Not Found: /media/proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg
