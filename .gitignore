@@ -7,7 +7,7 @@ venv/
 env/
 
 # Ignore local database
-db.sqlite3
+#db.sqlite3
 
 # Ignore environment variables
 .env
