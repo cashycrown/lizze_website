@@ -24,7 +24,7 @@ def send_admin_booking_notification(booking):
     """
     try:
         current_site = Site.objects.get_current()
-        confirm_url = f"http://{current_site.domain}{reverse('send_customer_confirmation', args=[booking.confirmation_token])}"
+        confirm_url = f"http://lashify-artistry.onrender.com{reverse('send_customer_confirmation', args=[booking.confirmation_token])}"
 
         message = f"""
 📥 New Booking Received!

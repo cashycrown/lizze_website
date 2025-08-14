@@ -1,0 +1,1343 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-07-30T12:01:00.857Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "37",
+    "object_repr": "baba sango - Nail Tech on 2025-08-13",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Service\", \"Paid\", \"Payment verified\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-07-30T12:01:46.868Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "37",
+    "object_repr": "baba sango - Nail Tech on 2025-08-13",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-07-30T12:02:12.700Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "37",
+    "object_repr": "baba sango - Nail Tech on 2025-08-13",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Verification slip\"]}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$KfgVpn8dKKC2EqmQOjNHyK$w5XzEOeS7pMK9G+Fypco4rx/zuZpevKtufxViYEuRpM=",
+    "last_login": "2025-08-13T14:50:52.971Z",
+    "is_superuser": true,
+    "username": "olamide",
+    "first_name": "",
+    "last_name": "",
+    "email": "olamideadedokun36@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-07-20T10:46:55.004Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "la2kxb56hfeotuoqeijbu4yl301d46qa",
+  "fields": {
+    "session_data": ".eJxVjM0OwiAQhN-FsyH8FESP3vsMZBd2pWogKe3J-O62SQ96nPm-mbeIsC4lrp3mOGVxFVqcfjuE9KS6g_yAem8ytbrME8pdkQftcmyZXrfD_Tso0Mu2hotnGjSCy-kcLDitmT05g8A6Beu2qCAzIVlGDIyOPA3GKBU4sBafLxe9OUw:1uh5SK:n3A9AE9HmgEPeibRR6GkJe5ZvWgwXQju4vwAuGMgeug",
+    "expire_date": "2025-08-13T11:58:48.326Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ok92s6ilokb2wxpgq9pnwgdmplejo902",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAGKBSX7j0DGYZBqoYmpV0Z765NutDtf-_9l4i4rTVunZc4ZXEWIE6_W0J6cNtBvmO7zZLmti5TkrsiD9rldc78vBzu30HFXr910Z49IXkMLqtA1riSCRKQDQROez2EUpz32iBbHiFpl9GooGCwIxjx_gDwhjd1:1umCoX:ub02gXFshRYTfKUHfZCYvB0QqwddprmUgA7c_rMvw1Y",
+    "expire_date": "2025-08-27T14:50:53.187Z"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 1,
+  "fields": {
+    "name": "Olamide",
+    "email": "olamideadedokun36@gmail.com",
+    "service": "facial",
+    "custom_details": "long",
+    "date": "2025-07-31",
+    "fee": "7000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/bubbles_ZYQGfeV.png",
+    "reference": "6C469822D9",
+    "paid": false,
+    "created_at": "2025-07-19T19:48:42.794Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 2,
+  "fields": {
+    "name": "Olamide",
+    "email": "olamideadedokun36@gmail.com",
+    "service": "facial",
+    "custom_details": "long",
+    "date": "2025-07-31",
+    "fee": "7000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/bubbles_uob2UXr.png",
+    "reference": "1DF66DFCFF",
+    "paid": false,
+    "created_at": "2025-07-19T19:54:26.868Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 3,
+  "fields": {
+    "name": "Olamide",
+    "email": "triumuph123@gmail.com",
+    "service": "tattoo",
+    "custom_details": "kjhrfh",
+    "date": "2025-07-16",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/bubbles_JCshQQM.png",
+    "reference": "998899D087",
+    "paid": false,
+    "created_at": "2025-07-19T19:58:17.005Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 4,
+  "fields": {
+    "name": "Gengest",
+    "email": "olamideadedokun36@gmail.com",
+    "service": "manicure",
+    "custom_details": "gfghu;o",
+    "date": "2025-07-15",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/cleaning-concept-with-man-showing-business-card.jpg",
+    "reference": "05BD380F6D",
+    "paid": false,
+    "created_at": "2025-07-19T20:00:02.605Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 5,
+  "fields": {
+    "name": "Gengest",
+    "email": "olamideadedokun36@gmail.com",
+    "service": "manicure",
+    "custom_details": "gfghu;o",
+    "date": "2025-07-15",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/cleaning-concept-with-man-showing-business-card_K2w9AfZ.jpg",
+    "reference": "5C079E74C2",
+    "paid": false,
+    "created_at": "2025-07-19T20:14:07.609Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 6,
+  "fields": {
+    "name": "Gengest",
+    "email": "olamideadedokun36@gmail.com",
+    "service": "manicure",
+    "custom_details": "gfghu;o",
+    "date": "2025-07-15",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/cleaning-concept-with-man-showing-business-card_bQNrF6J.jpg",
+    "reference": "64FFFC7BCC",
+    "paid": false,
+    "created_at": "2025-07-19T20:17:08.669Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 7,
+  "fields": {
+    "name": "grace",
+    "email": "lashifyartistry1@gmail.com",
+    "service": "facial",
+    "custom_details": "gfghu;o",
+    "date": "2025-07-15",
+    "fee": "7000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/coffe-shop-with-wooden-walls-unfocused.jpg",
+    "reference": "6787BC2378",
+    "paid": false,
+    "created_at": "2025-07-19T20:29:03.665Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 8,
+  "fields": {
+    "name": "grace",
+    "email": "lashifyartistry1@gmail.com",
+    "service": "facial",
+    "custom_details": "gfghu;o",
+    "date": "2025-07-15",
+    "fee": "7000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/coffe-shop-with-wooden-walls-unfocused_HJEOf8E.jpg",
+    "reference": "FBC12396AF",
+    "paid": false,
+    "created_at": "2025-07-19T20:41:50.588Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 9,
+  "fields": {
+    "name": "Olamide",
+    "email": "olamideadedokun36@gmail.com",
+    "service": "tattoo",
+    "custom_details": "dfghjk",
+    "date": "2025-07-22",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/disinfecting-home.jpg",
+    "reference": "564911331D",
+    "paid": false,
+    "created_at": "2025-07-19T21:14:44.772Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 10,
+  "fields": {
+    "name": "kwazawaza",
+    "email": "lashifyartistry1@gmail.com",
+    "service": "lashes",
+    "custom_details": "dfghjk",
+    "date": "2025-07-30",
+    "fee": "10000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/disinfecting-home_EcNc5h8.jpg",
+    "reference": "526ED25277",
+    "paid": false,
+    "created_at": "2025-07-20T10:17:52.872Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 11,
+  "fields": {
+    "name": "kwazawaza",
+    "email": "lashifyartistry1@gmail.com",
+    "service": "lashes",
+    "custom_details": "dfghjk",
+    "date": "2025-07-30",
+    "fee": "10000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/disinfecting-home_Vy3WpGM.jpg",
+    "reference": "3C6E8D4BEC",
+    "paid": false,
+    "created_at": "2025-07-20T10:20:00.229Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 12,
+  "fields": {
+    "name": "kwazawaza",
+    "email": "lashifyartistry1@gmail.com",
+    "service": "lashes",
+    "custom_details": "dfghjk",
+    "date": "2025-07-30",
+    "fee": "10000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/disinfecting-home_TCRqq88.jpg",
+    "reference": "A8F48A9836",
+    "paid": false,
+    "created_at": "2025-07-20T10:20:28.944Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 13,
+  "fields": {
+    "name": "kwazawaza",
+    "email": "lashifyartistry1@gmail.com",
+    "service": "lashes",
+    "custom_details": "dfghjk",
+    "date": "2025-07-30",
+    "fee": "10000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/disinfecting-home_jFVmvxU.jpg",
+    "reference": "0F34C43F25",
+    "paid": false,
+    "created_at": "2025-07-20T10:20:58.864Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 14,
+  "fields": {
+    "name": "kwazawaza",
+    "email": "lashifyartistry1@gmail.com",
+    "service": "lashes",
+    "custom_details": "dfghjk",
+    "date": "2025-07-30",
+    "fee": "10000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/disinfecting-home_RpzHiX7.jpg",
+    "reference": "1C57F4A0C6",
+    "paid": false,
+    "created_at": "2025-07-20T10:23:04.833Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 15,
+  "fields": {
+    "name": "kwazawaza",
+    "email": "olamideadedokun36@gmail.com",
+    "service": "manicure",
+    "custom_details": "dhfjghjlgf",
+    "date": "2025-07-31",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/essential-goods-during-epidemic-prevention-protection.jpg",
+    "reference": "94804C70CE",
+    "paid": false,
+    "created_at": "2025-07-20T10:24:36.371Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 16,
+  "fields": {
+    "name": "kwazawaza",
+    "email": "gracepersis1@gmail.com",
+    "service": "lashes",
+    "custom_details": "dhfjghjlgf",
+    "date": "2025-07-31",
+    "fee": "10000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/essential-goods-during-epidemic-prevention-protection_Z7zgtK6.jpg",
+    "reference": "EC4305B8DF",
+    "paid": false,
+    "created_at": "2025-07-20T10:27:42.687Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 17,
+  "fields": {
+    "name": "kwazawaza",
+    "email": "gracepersis1@gmail.com",
+    "service": "manicure",
+    "custom_details": "dhfjghjlgf",
+    "date": "2025-07-31",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/essential-goods-during-epidemic-prevention-protection_tzuqFjh.jpg",
+    "reference": "5CFC78E59A",
+    "paid": false,
+    "created_at": "2025-07-20T10:32:40.403Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 18,
+  "fields": {
+    "name": "kwazawaza",
+    "email": "gracepersis1@gmail.com",
+    "service": "manicure",
+    "custom_details": "dhfjghjlgf",
+    "date": "2025-07-31",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": true,
+    "payment_proof": "proofs/essential-goods-during-epidemic-prevention-protection_RO02Kad.jpg",
+    "reference": "16CCC92F68",
+    "paid": false,
+    "created_at": "2025-07-20T10:43:12.284Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 19,
+  "fields": {
+    "name": "Olamide",
+    "email": "gracepersis1@gmail.com",
+    "service": "manicure",
+    "custom_details": "ghfd;hdk'oh",
+    "date": "2025-07-16",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": true,
+    "payment_proof": "proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg",
+    "reference": "DA4DD137DB",
+    "paid": false,
+    "created_at": "2025-07-20T10:44:38.706Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 20,
+  "fields": {
+    "name": "Olamide",
+    "email": "gracepersis1@gmail.com",
+    "service": "manicure",
+    "custom_details": "ghfd;hdk'oh",
+    "date": "2025-07-16",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": true,
+    "payment_proof": "proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_AqBCEAr.jpg",
+    "reference": "0CC060916F",
+    "paid": false,
+    "created_at": "2025-07-20T10:57:04.106Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 21,
+  "fields": {
+    "name": "Olamide",
+    "email": "gracepersis1@gmail.com",
+    "service": "manicure",
+    "custom_details": "ghfd;hdk'oh",
+    "date": "2025-07-16",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": true,
+    "payment_proof": "proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_y1gWy1K.jpg",
+    "reference": "E8524DF209",
+    "paid": false,
+    "created_at": "2025-07-20T11:00:45.552Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b7b747cb-2aa5-4906-b2c7-e07dad0d93b1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 22,
+  "fields": {
+    "name": "Olamide",
+    "email": "gracepersis1@gmail.com",
+    "service": "lashes",
+    "custom_details": "i need jtisjgo",
+    "date": "2025-07-16",
+    "fee": "10000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing_JXbYaG4.jpg",
+    "reference": "C68FCFC64D",
+    "paid": false,
+    "created_at": "2025-07-20T20:01:29.534Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "227a7c70-df6b-48a2-9a7a-79d8a7b60846"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 23,
+  "fields": {
+    "name": "palmy",
+    "email": "gracepersis1@gmail.com",
+    "service": "pedicure",
+    "custom_details": "jtgkjrp",
+    "date": "2025-07-31",
+    "fee": "6000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/man-polishing-car-inside.jpg",
+    "reference": "605F569F2B",
+    "paid": false,
+    "created_at": "2025-07-20T20:24:08.146Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "e7e8b20a-4a7f-448f-a652-d4e6e7626e88"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 24,
+  "fields": {
+    "name": "palmy",
+    "email": "gracepersis1@gmail.com",
+    "service": "pedicure",
+    "custom_details": "jtgkjrp",
+    "date": "2025-07-31",
+    "fee": "6000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/man-polishing-car-inside_tEe2kxk.jpg",
+    "reference": "E4A8EF53D2",
+    "paid": false,
+    "created_at": "2025-07-20T20:28:03.093Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "09ce6f86-886f-4614-9ba3-9b80970a4d58"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 25,
+  "fields": {
+    "name": "palmy",
+    "email": "gracepersis1@gmail.com",
+    "service": "pedicure",
+    "custom_details": "jtgkjrp",
+    "date": "2025-07-31",
+    "fee": "6000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/man-polishing-car-inside_gWUuq8Q.jpg",
+    "reference": "AE945B3AA1",
+    "paid": false,
+    "created_at": "2025-07-20T20:30:26.835Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "32e9dc7d-f095-4fa5-9af6-69e564b01563"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 26,
+  "fields": {
+    "name": "kwazawaza",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "i need a floral mini tatt",
+    "date": "2025-07-31",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/person-taking-care-office.jpg",
+    "reference": "6CC88425D4",
+    "paid": false,
+    "created_at": "2025-07-20T21:24:55.862Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "19636d82-03b3-442b-b883-c13dd6891b69"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 27,
+  "fields": {
+    "name": "alimoh",
+    "email": "alimohoyeleye22@gmail.com",
+    "service": "tattoo",
+    "custom_details": "i need a capital letter B TATT",
+    "date": "2025-08-09",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/woman-holding-rag-detergent-cleaning-cooker.jpg",
+    "reference": "0F6FDEED81",
+    "paid": false,
+    "created_at": "2025-07-21T20:27:42.207Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "83d0b7ed-59a2-4e1d-a1d5-a4fdf6ec5d93"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 28,
+  "fields": {
+    "name": "baba sango",
+    "email": "olamideadedokun36@gmail.com",
+    "service": "hair",
+    "custom_details": "i want all back and patewo",
+    "date": "2025-08-10",
+    "fee": "9000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/woman-holding-rag-detergent-cleaning-cooker.jpg",
+    "reference": "CD94FC766B",
+    "paid": false,
+    "created_at": "2025-07-23T19:17:03.072Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "1b3709b9-375d-440e-8c9b-d0f2034cc9f1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 29,
+  "fields": {
+    "name": "baba sango",
+    "email": "olamideadedokun36@gmail.com",
+    "service": "hair",
+    "custom_details": "i wan do all back and shuku",
+    "date": "2025-07-31",
+    "fee": "9000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/man-polishing-car-inside.jpg",
+    "reference": "49D547D9DB",
+    "paid": false,
+    "created_at": "2025-07-23T19:18:57.176Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "de62c174-1d50-4320-915d-3ce308611831"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 30,
+  "fields": {
+    "name": "Gengest",
+    "email": "gracepersis1@gmail.com",
+    "service": "hair",
+    "custom_details": ";iouy;ty",
+    "date": "2025-07-26",
+    "fee": "9000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/close-up-mop-cleaning-industrial-plant-floor.jpg",
+    "reference": "386AEC66B7",
+    "paid": false,
+    "created_at": "2025-07-30T11:34:29.046Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "e84e110f-2064-4746-be1e-7a9080ee807b"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 31,
+  "fields": {
+    "name": "Gengest",
+    "email": "gracepersis1@gmail.com",
+    "service": "hair",
+    "custom_details": ";iouy;ty",
+    "date": "2025-07-26",
+    "fee": "9000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/close-up-mop-cleaning-industrial-plant-floor_3xEA2xq.jpg",
+    "reference": "1A76F2CFF6",
+    "paid": false,
+    "created_at": "2025-07-30T11:44:32.412Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "1206168f-8f2d-48da-9579-a71946c920d0"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 32,
+  "fields": {
+    "name": "grace",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "jklliog",
+    "date": "2025-07-13",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/woman-holding-rag-detergent-cleaning-cooker_fOnjmcK.jpg",
+    "reference": "458F1CB35B",
+    "paid": false,
+    "created_at": "2025-07-30T11:45:23.723Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "d65846b1-1eb0-4c40-849d-f58485e5dd21"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 33,
+  "fields": {
+    "name": "grace",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "jklliog",
+    "date": "2025-07-13",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/woman-holding-rag-detergent-cleaning-cooker_Vlgfm5n.jpg",
+    "reference": "5D0BD8A93F",
+    "paid": false,
+    "created_at": "2025-07-30T11:48:29.788Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "f2fae222-32d8-40e1-a818-2709c8c42982"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 34,
+  "fields": {
+    "name": "grace",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "jklliog",
+    "date": "2025-07-13",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/woman-holding-rag-detergent-cleaning-cooker_O3pDhyL.jpg",
+    "reference": "5CE270AFD1",
+    "paid": false,
+    "created_at": "2025-07-30T11:50:35.300Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "84b7b0db-698d-41ae-9157-d375a2d0262f"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 35,
+  "fields": {
+    "name": "baba sango",
+    "email": "gracepersis1@gmail.com",
+    "service": "ANMLP_nails",
+    "custom_details": "uiuuu",
+    "date": "2025-07-29",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/person-taking-care-office.jpg",
+    "reference": "EE40F85F57",
+    "paid": false,
+    "created_at": "2025-07-30T11:52:07.489Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "9fe92e44-3d24-4424-9a5c-de9752c9073b"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 36,
+  "fields": {
+    "name": "baba sango",
+    "email": "gracepersis1@gmail.com",
+    "service": "ANMLED_nails",
+    "custom_details": "uiuuu",
+    "date": "2025-07-29",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/person-taking-care-office_IDgg4O1.jpg",
+    "reference": "8086E56881",
+    "paid": false,
+    "created_at": "2025-07-30T11:55:43.037Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "52191bab-9d89-454d-8cb7-1a329850da7d"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 37,
+  "fields": {
+    "name": "baba sango",
+    "email": "gracepersis1@gmail.com",
+    "service": "nails",
+    "custom_details": "uh089hu8i",
+    "date": "2025-08-13",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": true,
+    "payment_proof": "proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg",
+    "reference": "495F1CE65A",
+    "paid": true,
+    "created_at": "2025-07-30T11:56:34.241Z",
+    "verification_notes": "",
+    "verification_slip": "verification_slips/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg",
+    "confirmation_token": "df6aa32c-4822-473a-b952-c7da6e8006cc"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 38,
+  "fields": {
+    "name": "monday Amin",
+    "email": "gracepersis1@gmail.com",
+    "service": "ANLLFT_nails",
+    "custom_details": "huyilhulohulo",
+    "date": "2025-08-27",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/man-polishing-car-inside-car-service.jpg",
+    "reference": "FB2D8EDC0D",
+    "paid": false,
+    "created_at": "2025-07-30T12:19:27.843Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "d256810f-b6c9-40ac-ac6d-5fc5472ac681"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 39,
+  "fields": {
+    "name": "ZAZZU",
+    "email": "gracepersis1@gmail.com",
+    "service": "ANMLED_nails",
+    "custom_details": "ihbklh",
+    "date": "2025-08-21",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/people-taking-care-office-cleaning.jpg",
+    "reference": "FE2833B4E5",
+    "paid": false,
+    "created_at": "2025-07-30T14:17:07.217Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "2ba55d01-9ba7-40f0-90e2-9ddfe9df9a57"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 40,
+  "fields": {
+    "name": "Gengest",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "ertghjk",
+    "date": "2025-07-30",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/man-polishing-car-inside-car-service_oD6OXpj.jpg",
+    "reference": "7EBAE33982",
+    "paid": false,
+    "created_at": "2025-07-31T07:40:46.351Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "0dd84ddb-a374-4edc-a617-0080eb2b68a7"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 41,
+  "fields": {
+    "name": "Gengest",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "ertghjk",
+    "date": "2025-07-30",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/man-polishing-car-inside-car-service_ETkYXyF.jpg",
+    "reference": "6AA334F117",
+    "paid": false,
+    "created_at": "2025-07-31T07:41:24.337Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "17e3797c-344b-40bd-9ee1-aa74806af412"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 42,
+  "fields": {
+    "name": "Gengest",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "ertghjk",
+    "date": "2025-07-30",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/man-polishing-car-inside-car-service_pfhRPzC.jpg",
+    "reference": "F1C47CC49C",
+    "paid": false,
+    "created_at": "2025-07-31T07:42:34.757Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "4d158198-a0a9-418c-8584-73ad8c5b8cfb"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 43,
+  "fields": {
+    "name": "Gengest",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "ertghjk",
+    "date": "2025-07-30",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/man-polishing-car-inside-car-service_mwJ4MLN.jpg",
+    "reference": "DA1260D766",
+    "paid": false,
+    "created_at": "2025-07-31T07:42:53.491Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "36e2eaf2-872b-4529-9e3b-1b8369a5704c"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 44,
+  "fields": {
+    "name": "Gengest",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "ertghjk",
+    "date": "2025-07-30",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/man-polishing-car-inside-car-service_7ojhiAZ.jpg",
+    "reference": "21DB549270",
+    "paid": false,
+    "created_at": "2025-07-31T07:52:49.299Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "8821c700-8f3a-4593-8c25-8c09ed6c3d77"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 45,
+  "fields": {
+    "name": "baba sango",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "rgvfjh",
+    "date": "2025-08-08",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/woman-holding-rag-detergent-cleaning-cooker_iZfCC55.jpg",
+    "reference": "2248F13475",
+    "paid": false,
+    "created_at": "2025-07-31T07:55:07.371Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "ded25451-63f2-4d34-b07b-bf7ace5a647f"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 46,
+  "fields": {
+    "name": "baba sango",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "rgvfjh",
+    "date": "2025-08-08",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/woman-holding-rag-detergent-cleaning-cooker_9rP1KE9.jpg",
+    "reference": "1B9521013C",
+    "paid": false,
+    "created_at": "2025-07-31T07:55:10.159Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "8357215d-6a1c-4b83-bb9d-a7d1c973d422"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 47,
+  "fields": {
+    "name": "baba sango",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "rgvfjh",
+    "date": "2025-08-08",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/woman-holding-rag-detergent-cleaning-cooker_kZW2zxx.jpg",
+    "reference": "EA67360E9C",
+    "paid": false,
+    "created_at": "2025-07-31T07:56:17.287Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "d9c3532e-abe9-4f3a-bf20-2f05a08765f1"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 48,
+  "fields": {
+    "name": "baba sango",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "rgvfjh",
+    "date": "2025-08-08",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/woman-holding-rag-detergent-cleaning-cooker_QdzpMN3.jpg",
+    "reference": "1481B92F7A",
+    "paid": false,
+    "created_at": "2025-07-31T08:06:37.452Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "5e4c8018-7c9a-4331-b068-b1c4eb64e732"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 49,
+  "fields": {
+    "name": "baba sango",
+    "email": "gracepersis1@gmail.com",
+    "service": "tattoo",
+    "custom_details": "rgvfjh",
+    "date": "2025-08-08",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/woman-holding-rag-detergent-cleaning-cooker_EXzZeUI.jpg",
+    "reference": "924D1F341B",
+    "paid": false,
+    "created_at": "2025-07-31T08:11:19.180Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "b8873094-2a1b-404b-8bbe-8662501d36bc"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 50,
+  "fields": {
+    "name": "Gengest",
+    "email": "gracepersis1@gmail.com",
+    "service": "ANMLED_nails",
+    "custom_details": "fghygt",
+    "date": "2025-08-09",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/professional-industrial-cleaner-protective-uniform-cleaning-floor-food-processing-plant.jpg",
+    "reference": "C8E1D74E27",
+    "paid": false,
+    "created_at": "2025-07-31T08:27:46.040Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "1104a500-af30-4057-8e36-613c4ebd3bd2"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 51,
+  "fields": {
+    "name": "Olamide",
+    "email": "olamideadedokun36@gmail.com",
+    "service": "ANSLFT_nails",
+    "custom_details": "ytuio",
+    "date": "2025-07-28",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove_Kp6pMtD.jpg",
+    "reference": "CF6A94221F",
+    "paid": false,
+    "created_at": "2025-07-31T20:13:39.774Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "086b8079-de36-485a-95ba-0db3653ab97a"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 52,
+  "fields": {
+    "name": "kwazawaza",
+    "email": "gracepersis1@gmail.com",
+    "service": "ANMLP_nails",
+    "custom_details": "retykuiop",
+    "date": "2025-08-08",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/person-taking-care-office_CTtEoQ6.jpg",
+    "reference": "ABF268C780",
+    "paid": false,
+    "created_at": "2025-07-31T20:15:55.408Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "18b26f5b-fdec-4c65-b8c8-729d11592b3b"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 53,
+  "fields": {
+    "name": "tyuil",
+    "email": "gracepersis1@gmail.com",
+    "service": "ANMLFT_nails",
+    "custom_details": "",
+    "date": "2025-09-06",
+    "fee": "15000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "",
+    "reference": "",
+    "paid": false,
+    "created_at": "2025-08-13T14:35:00.200Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "31bc4733-e3a0-4913-85b0-3c4af50f4a41"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 54,
+  "fields": {
+    "name": "fghjkl",
+    "email": "gracepersis1@gmail.com",
+    "service": "ANLLFT_nails",
+    "custom_details": "",
+    "date": "2025-08-30",
+    "fee": "20000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "",
+    "reference": "JJETWY33BC1TLLAT",
+    "paid": false,
+    "created_at": "2025-08-13T14:48:17.731Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "e65e0e3b-bb1e-46d6-8de5-daf762836ab0"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 55,
+  "fields": {
+    "name": "James Oslondo",
+    "email": "olamideadedokun36@gmail.com",
+    "service": "C_lashes",
+    "custom_details": "",
+    "date": "2025-08-30",
+    "fee": "12000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "",
+    "reference": "G9TOT4CFN7PRCYEO",
+    "paid": false,
+    "created_at": "2025-08-13T15:03:56.878Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "63de1821-e33b-4efc-9511-9826053f1f07"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 56,
+  "fields": {
+    "name": "baba sango",
+    "email": "lashifyartistry1@gmail.com",
+    "service": "ANLLP_nails",
+    "custom_details": "",
+    "date": "2025-08-30",
+    "fee": "16000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "",
+    "reference": "ASR3Z7H3JHY98FG3",
+    "paid": false,
+    "created_at": "2025-08-13T15:55:04.195Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "8ed92bab-bb27-47b0-a70e-99dc84abc83c"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 57,
+  "fields": {
+    "name": "baba sango",
+    "email": "lashifyartistry1@gmail.com",
+    "service": "GNSL_nails",
+    "custom_details": "",
+    "date": "2025-08-30",
+    "fee": "6000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "",
+    "reference": "MJ92MF401JIPL120",
+    "paid": false,
+    "created_at": "2025-08-13T16:00:10.288Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "9e0cdd2c-0c01-4cd8-b062-079c6627ff08"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 58,
+  "fields": {
+    "name": "baba sango",
+    "email": "lashifyartistry1@gmail.com",
+    "service": "GNLL_nails",
+    "custom_details": "",
+    "date": "2025-08-30",
+    "fee": "10000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "",
+    "reference": "4H60CSC2BUSBXB7U",
+    "paid": false,
+    "created_at": "2025-08-13T16:11:00.952Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "4e505934-fedf-4c72-b8b1-061b67ef1b39"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 59,
+  "fields": {
+    "name": "alimoh",
+    "email": "lashifyartistry1@gmail.com",
+    "service": "ANMLP_nails",
+    "custom_details": "",
+    "date": "2025-09-05",
+    "fee": "12000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/man-polishing-car-inside.jpg",
+    "reference": "88A02H52OVKIB3TC",
+    "paid": false,
+    "created_at": "2025-08-13T16:19:13.831Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "69b1a4b3-53b7-4a1b-95ce-5b1ece0ece39"
+  }
+},
+{
+  "model": "Lashify_Artistry.booking",
+  "pk": 60,
+  "fields": {
+    "name": "Gengest",
+    "email": "lashifyartistry1@gmail.com",
+    "service": "manicure",
+    "custom_details": "",
+    "date": "2025-08-30",
+    "fee": "5000.00",
+    "payment_method": "manual",
+    "payment_verified": false,
+    "payment_proof": "proofs/young-smiling-woman-wearing-rubber-gloves-cleaning-stove.jpg",
+    "reference": "891JT5WG93BHOL8K",
+    "paid": false,
+    "created_at": "2025-08-13T16:33:41.042Z",
+    "verification_notes": null,
+    "verification_slip": "",
+    "confirmation_token": "2e4ca2ab-6392-4251-81ee-55d947630f6c"
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "example.com",
+    "name": "example.com"
+  }
+}
+]
