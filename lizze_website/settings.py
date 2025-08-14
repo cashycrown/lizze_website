@@ -30,7 +30,7 @@ INSTALLED_APPS = [
     # Your app
     'Lashify_Artistry',
 ]
-
+SITE_ID = 1
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',  # for static files on Render
