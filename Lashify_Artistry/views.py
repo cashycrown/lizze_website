@@ -5,6 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils import timezone
 from django.core.mail import EmailMessage
 from django.conf import settings
+from email.mime.image import MIMEImage
 import uuid
 import logging
 
@@ -80,56 +81,59 @@ def create_booking(request):
         # ---------- Admin Email ----------
         admin_subject = f"New Booking - {service_display}"
         admin_message = f"""
-📥 New Booking Received!
+<html>
+<body>
+<h2>📥 New Booking Received!</h2>
+<p><strong>👤 Name:</strong> {booking.name}<br>
+<strong>💅 Service:</strong> {service_display}<br>
+<strong>📧 Email:</strong> {booking.email}<br>
+<strong>📅 Date:</strong> {booking.date}<br>
+<strong>💳 Payment Method:</strong> {payment_display}<br>
+<strong>💰 Fee:</strong> ₦{booking.fee}</p>
 
-👤 Name: {booking.name}
-💅 Service: {service_display}
-📧 Email: {booking.email}
-📅 Date: {booking.date}
-💳 Payment Method: {payment_display}
-💰 Fee: ₦{booking.fee}
-
-Click below to verify and send confirmation to the customer:
-🔗 {confirmation_url}
+<p>Click below to verify and send confirmation to the customer:<br>
+<a href="{confirmation_url}">{confirmation_url}</a></p>
 """
+
+        # Inline proof image if uploaded
         email_admin = EmailMessage(
             subject=admin_subject,
             body=admin_message,
             from_email=settings.DEFAULT_FROM_EMAIL,
             to=getattr(settings, "ADMINS_EMAILS", [settings.DEFAULT_FROM_EMAIL]),
         )
+        email_admin.content_subtype = "html"  # Enable HTML
 
-        # Attach proof if uploaded
         if booking.payment_proof:
             try:
-                # Open the file safely from storage
                 with booking.payment_proof.open("rb") as f:
-                    email_admin.attach(
-                        booking.payment_proof.name,
-                        f.read(),
-                        booking.payment_proof.file.content_type
-                    )
+                    img = MIMEImage(f.read())
+                    img.add_header("Content-ID", "<proof>")
+                    email_admin.attach(img)
+
+                # add image to body
+                email_admin.body += '<p><b>Payment Proof:</b><br><img src="cid:proof" style="max-width:400px;"></p>'
             except Exception as e:
-                logger.error(f"Could not attach payment proof: {e}")
+                logger.error(f"Could not embed payment proof: {e}")
 
         email_admin.send(fail_silently=False)
 
         # ---------- Customer Email ----------
         customer_subject = "Your Booking Confirmation - Lashify Artistry"
         customer_message = f"""
-Hi {booking.name},
+Hi {booking.name},<br><br>
 
-Thank you for booking with Lashify Artistry! 💖
+Thank you for booking with Lashify Artistry! 💖<br><br>
 
-💅 Service: {service_display}
-📅 Date: {booking.date}
-💰 Booking Fee: ₦{booking.fee}
-💳 Payment Method: {payment_display}
+💅 <b>Service:</b> {service_display}<br>
+📅 <b>Date:</b> {booking.date}<br>
+💰 <b>Booking Fee:</b> ₦{booking.fee}<br>
+💳 <b>Payment Method:</b> {payment_display}<br><br>
 
-Please confirm your booking by clicking below:
-{confirmation_url}
+Please confirm your booking by clicking below:<br>
+<a href="{confirmation_url}">{confirmation_url}</a><br><br>
 
-With love,
+With love,<br>
 Lashify Artistry
 """
         email_customer = EmailMessage(
@@ -138,6 +142,7 @@ Lashify Artistry
             from_email=settings.DEFAULT_FROM_EMAIL,
             to=[booking.email],
         )
+        email_customer.content_subtype = "html"  # Send as HTML
         email_customer.send(fail_silently=False)
 
         return render(request, 'booking_success.html', {'booking': booking})
@@ -158,18 +163,17 @@ def send_customer_confirmation(request, token):
     """Customer clicks confirmation link -> mark booking + send final email."""
     booking = get_object_or_404(Booking, confirmation_token=token)
 
-    # Format service name
     if hasattr(booking, "get_service_display"):
         service_display = booking.get_service_display()
     else:
         service_display = str(booking.service).replace("_", " ").title()
 
     confirmation_message = f"""
-Hi {booking.name},
+Hi {booking.name},<br><br>
 
-Your booking for {service_display} on {booking.date} has been confirmed ✅.
+Your booking for <b>{service_display}</b> on {booking.date} has been confirmed ✅.<br><br>
 
-Thank you,
+Thank you,<br>
 Lashify Artistry
 """
     email = EmailMessage(
@@ -178,6 +182,7 @@ Lashify Artistry
         from_email=settings.DEFAULT_FROM_EMAIL,
         to=[booking.email],
     )
+    email.content_subtype = "html"
     email.send(fail_silently=False)
 
     return HttpResponse("Booking confirmed and email sent.")

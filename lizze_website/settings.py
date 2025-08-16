@@ -114,6 +114,8 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Admin email for booking notifications
 # Admin emails for booking notifications (multiple allowed)
+DEFAULT_FROM_EMAIL = "olamideadedokun36@gmail.com"   # Or your business email
+SERVER_EMAIL = DEFAULT_FROM_EMAIL
 ADMIN_EMAILS = [
     "olamideadedokun36@gmail.com",
     "lashifyartistry1@gmail.com",
