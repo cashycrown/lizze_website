@@ -1,5 +1,5 @@
 from django.db import models
-from django.core.mail import EmailMessage
+from django.core.mail import EmailMessage, send_mail
 from django.conf import settings
 from django.contrib.sites.models import Site
 from django.urls import reverse
@@ -42,7 +42,7 @@ Click below to verify and send confirmation to the customer:
 🔗 {confirm_url}
 """
 
-        email = EmailMessage(
+        send_mail(
             subject="📥 New Booking Notification - Lashify Artistry",
             body=message,
             from_email=settings.DEFAULT_FROM_EMAIL,
