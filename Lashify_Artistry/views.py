@@ -67,16 +67,18 @@ def create_booking(request):
         )
 
         # Clean service name
-        if hasattr(booking, "get_service_display"):
-            service_display = booking.get_service_display()
-        else:
-            service_display = str(booking.service).replace("_", " ").title()
+        service_display = (
+            booking.get_service_display()
+            if hasattr(booking, "get_service_display")
+            else str(booking.service).replace("_", " ").title()
+        )
 
         # Clean payment method
-        if hasattr(booking, "get_payment_method_display"):
-            payment_display = booking.get_payment_method_display()
-        else:
-            payment_display = str(booking.payment_method).replace("_", " ").title()
+        payment_display = (
+            booking.get_payment_method_display()
+            if hasattr(booking, "get_payment_method_display")
+            else str(booking.payment_method).replace("_", " ").title()
+        )
 
         # ---------- Admin Email ----------
         admin_subject = f"New Booking - {service_display}"
@@ -100,7 +102,7 @@ def create_booking(request):
             subject=admin_subject,
             body=admin_message,
             from_email=settings.DEFAULT_FROM_EMAIL,
-            to=getattr(settings, "ADMINS_EMAILS", [settings.DEFAULT_FROM_EMAIL]),
+            to=getattr(settings, "ADMIN_EMAILS", [settings.DEFAULT_FROM_EMAIL]),
         )
         email_admin.content_subtype = "html"  # Enable HTML
 
@@ -111,8 +113,11 @@ def create_booking(request):
                     img.add_header("Content-ID", "<proof>")
                     email_admin.attach(img)
 
-                # add image to body
-                email_admin.body += '<p><b>Payment Proof:</b><br><img src="cid:proof" style="max-width:400px;"></p>'
+                # Add image inside email body
+                email_admin.body += (
+                    '<p><b>Payment Proof:</b><br>'
+                    '<img src="cid:proof" style="max-width:400px;"></p>'
+                )
             except Exception as e:
                 logger.error(f"Could not embed payment proof: {e}")
 
@@ -163,10 +168,11 @@ def send_customer_confirmation(request, token):
     """Customer clicks confirmation link -> mark booking + send final email."""
     booking = get_object_or_404(Booking, confirmation_token=token)
 
-    if hasattr(booking, "get_service_display"):
-        service_display = booking.get_service_display()
-    else:
-        service_display = str(booking.service).replace("_", " ").title()
+    service_display = (
+        booking.get_service_display()
+        if hasattr(booking, "get_service_display")
+        else str(booking.service).replace("_", " ").title()
+    )
 
     confirmation_message = f"""
 Hi {booking.name},<br><br>
