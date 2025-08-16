@@ -2,13 +2,15 @@ from django.contrib import admin, messages
 from django.utils.html import format_html
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
-from django.urls import path
 from django.shortcuts import redirect
 from .models import Booking
 
 
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
+    """Admin configuration for Booking model."""
+
+    # ---- Display settings ----
     list_display = (
         'name', 'email', 'service', 'date',
         'paid', 'payment_verified', 'is_confirmed',
@@ -31,52 +33,76 @@ class BookingAdmin(admin.ModelAdmin):
         'reference', 'created_at', 'send_email_button',
     )
 
-    # ---- Custom buttons ----
+    # =========================================================
+    # Custom Buttons
+    # =========================================================
     def send_email_button(self, obj):
+        """Button to send confirmation email inside detail view."""
         if obj.id:
             return format_html(
-                '<a class="button" style="padding:5px 10px; background:#28a745; color:white; border-radius:5px;" '
-                'href="{}">📨 Send Confirmation Email</a>',
+                '<a class="button" style="padding:5px 10px; background:#28a745; '
+                'color:white; border-radius:5px;" href="{}">📨 Send Confirmation Email</a>',
                 f'?send_email=1'
             )
         return ""
     send_email_button.short_description = "Send Email"
 
     def change_view(self, request, object_id, form_url='', extra_context=None):
+        """Intercepts query params to send confirmation email directly."""
         obj = self.get_object(request, object_id)
 
         if 'send_email' in request.GET:
-            if obj.paid and obj.payment_verified and obj.verification_slip:
-                try:
-                    message = render_to_string("emails/confirmation_email.html", {
-                        'booking': obj,
-                        'site_name': "Lashify Artistry",
-                    })
-                    email = EmailMessage(
-                        subject="✅ Payment Verified - Lashify Artistry",
-                        body=message,
-                        from_email=None,
-                        to=[obj.email],
-                    )
-                    email.content_subtype = "html"
-                    email.attach_file(obj.verification_slip.path)
-                    email.send(fail_silently=False)
-                    self.message_user(request, f"Confirmation email sent to {obj.email}", messages.SUCCESS)
-                except Exception as e:
-                    self.message_user(request, f"Error sending email: {e}", messages.ERROR)
-            else:
-                self.message_user(request, "Booking not eligible (check paid, verified, and slip).", messages.WARNING)
+            self._send_confirmation_email(request, obj)
             return redirect(request.path)
 
         return super().change_view(request, object_id, form_url, extra_context)
 
-    # ---- Boolean status ----
+    # =========================================================
+    # Helpers
+    # =========================================================
+    def _send_confirmation_email(self, request, booking):
+        """Reusable method to send confirmation email with slip attached."""
+        if booking.paid and booking.payment_verified and booking.verification_slip:
+            try:
+                message = render_to_string("emails/confirmation_email.html", {
+                    'booking': booking,
+                    'site_name': "Lashify Artistry",
+                })
+                email = EmailMessage(
+                    subject="✅ Payment Verified - Lashify Artistry",
+                    body=message,
+                    from_email=None,
+                    to=[booking.email],
+                )
+                email.content_subtype = "html"
+                email.attach_file(booking.verification_slip.path)
+                email.send(fail_silently=False)
+
+                self.message_user(
+                    request,
+                    f"Confirmation email sent to {booking.email}",
+                    messages.SUCCESS
+                )
+            except Exception as e:
+                self.message_user(request, f"Error sending email: {e}", messages.ERROR)
+        else:
+            self.message_user(
+                request,
+                "Booking not eligible (check paid, verified, and slip).",
+                messages.WARNING
+            )
+
+    # =========================================================
+    # Boolean status
+    # =========================================================
     def is_confirmed(self, obj):
         return bool(obj.paid and obj.payment_verified and obj.verification_slip)
     is_confirmed.boolean = True
     is_confirmed.short_description = 'Confirmed'
 
-    # ---- Image previews in detail view ----
+    # =========================================================
+    # Image Previews
+    # =========================================================
     def payment_proof_preview(self, obj):
         if obj.payment_proof:
             return format_html('<img src="{}" style="max-height:150px; border:1px solid #ccc;" />', obj.payment_proof.url)
@@ -89,7 +115,9 @@ class BookingAdmin(admin.ModelAdmin):
         return "No slip"
     verification_slip_preview.short_description = 'Verification Slip'
 
-    # ---- Thumbnails in changelist view ----
+    # =========================================================
+    # Thumbnails in list view
+    # =========================================================
     def payment_proof_thumb(self, obj):
         if obj.payment_proof:
             return format_html('<img src="{}" style="max-height:50px;" />', obj.payment_proof.url)
@@ -102,7 +130,9 @@ class BookingAdmin(admin.ModelAdmin):
         return "-"
     verification_slip_thumb.short_description = 'Slip'
 
-    # ---- Admin actions ----
+    # =========================================================
+    # Admin actions
+    # =========================================================
     @admin.action(description="✅ Mark selected bookings as Verified")
     def mark_as_verified(self, request, queryset):
         updated = queryset.update(payment_verified=True)
@@ -111,23 +141,4 @@ class BookingAdmin(admin.ModelAdmin):
     @admin.action(description="📨 Resend confirmation email")
     def resend_confirmation_email(self, request, queryset):
         for booking in queryset:
-            if booking.paid and booking.payment_verified and booking.verification_slip:
-                try:
-                    message = render_to_string("emails/confirmation_email.html", {
-                        'booking': booking,
-                        'site_name': "Lashify Artistry",
-                    })
-                    email = EmailMessage(
-                        subject="✅ Payment Verified - Lashify Artistry",
-                        body=message,
-                        from_email=None,
-                        to=[booking.email],
-                    )
-                    email.content_subtype = "html"
-                    email.attach_file(booking.verification_slip.path)
-                    email.send()
-                    messages.success(request, f"Confirmation email sent to {booking.email}")
-                except Exception as e:
-                    messages.error(request, f"Failed for {booking.email}: {str(e)}")
-            else:
-                messages.warning(request, f"{booking.email} not eligible for confirmation email")
+            self._send_confirmation_email(request, booking)
