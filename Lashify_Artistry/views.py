@@ -3,8 +3,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils import timezone
+from django.core.mail import EmailMessage
 from django.conf import settings
-from django.core.mail import send_mail
 import uuid
 import logging
 
@@ -12,7 +12,7 @@ from .models import Booking
 
 logger = logging.getLogger(__name__)
 
-# ========== BASIC PAGES ==========
+# ================= BASIC PAGES =================
 def index(request): 
     return render(request, 'index.html')
 
@@ -35,28 +35,7 @@ def servicesDetails(request):
     return render(request, 'services-detail.html')
 
 
-# ========== EMAIL HELPER ==========
-def send_app_email(subject, message, recipient_email):
-    """
-    Simple reusable function for sending emails via Django's email backend.
-    (No Brevo SDK, just uses SMTP configured in settings.py)
-    """
-    try:
-        send_mail(
-            subject,
-            message,
-            settings.DEFAULT_FROM_EMAIL,
-            [recipient_email],
-            fail_silently=False,
-        )
-        logger.info(f"✅ Email sent to {recipient_email}")
-        return True
-    except Exception as e:
-        logger.error(f"❌ Email sending failed: {e}")
-        return False
-
-
-# ========== BOOKINGS ==========
+# ================= BOOKINGS =================
 @csrf_exempt
 def create_booking(request):
     if request.method == 'POST':
@@ -68,53 +47,98 @@ def create_booking(request):
         payment_method = request.POST.get('payment_method')
         image_proof = request.FILES.get("payment_proof")
 
-        print(f"fee received from frontend: {fee}")
-
+        # Create booking object
         booking = Booking.objects.create(
             name=name,
             email=email,
             service=service,
             date=date,
-            fee=Decimal(fee),
+            fee=Decimal(fee or "0"),
             payment_method=payment_method,
             created_at=timezone.now(),
             payment_proof=image_proof,
-            confirmation_token=uuid.uuid4()   # ✅ generate token
+            confirmation_token=uuid.uuid4()
         )
 
-        # Confirmation URL for customer
-        confirmation_url = request.build_absolute_uri(f"/confirm/{booking.confirmation_token}/")
+        # Confirmation URL
+        confirmation_url = request.build_absolute_uri(
+            f"/confirm/{booking.confirmation_token}/"
+        )
 
-        # --- Admin notification ---
-        admin_msg = f"""
-        New Booking Received
+        # Clean service name
+        if hasattr(booking, "get_service_display"):
+            service_display = booking.get_service_display()
+        else:
+            service_display = str(booking.service).replace("_", " ").title()
 
-        Name: {name}
-        Email: {email}
-        Service: {service}
-        Date: {date}
-        Fee: ₦{fee}
-        Payment Method: {payment_method}
-        """
-        send_app_email(f"New Booking - {service}", admin_msg, settings.ADMIN_EMAIL)
+        # Clean payment method
+        if hasattr(booking, "get_payment_method_display"):
+            payment_display = booking.get_payment_method_display()
+        else:
+            payment_display = str(booking.payment_method).replace("_", " ").title()
 
-        # --- Customer confirmation ---
-        customer_msg = f"""
-        Hi {name},
+        # ---------- Admin Email ----------
+        admin_subject = f"New Booking - {service_display}"
+        admin_message = f"""
+📥 New Booking Received!
 
-        Thank you for booking with Lashify Artistry!
+👤 Name: {booking.name}
+💅 Service: {service_display}
+📧 Email: {booking.email}
+📅 Date: {booking.date}
+💳 Payment Method: {payment_display}
+💰 Fee: ₦{booking.fee}
 
-        Service: {service}
-        Date: {date}
-        Booking Fee: ₦{fee}
+Click below to verify and send confirmation to the customer:
+🔗 {confirmation_url}
+"""
+        email_admin = EmailMessage(
+            subject=admin_subject,
+            body=admin_message,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            to=getattr(settings, "ADMINS_EMAILS", [settings.DEFAULT_FROM_EMAIL]),
+        )
 
-        Please confirm your booking by clicking this link:
-        {confirmation_url}
+        # Attach proof if uploaded
+        if booking.payment_proof:
+            try:
+                # Open the file safely from storage
+                with booking.payment_proof.open("rb") as f:
+                    email_admin.attach(
+                        booking.payment_proof.name,
+                        f.read(),
+                        booking.payment_proof.file.content_type
+                    )
+            except Exception as e:
+                logger.error(f"Could not attach payment proof: {e}")
 
-        Best regards,
-        Lashify Artistry
-        """
-        send_app_email("Your Booking Confirmation - Lashify Artistry", customer_msg, email)
+        email_admin.send(fail_silently=False)
+
+        # ---------- Customer Email ----------
+        customer_subject = "Your Booking Confirmation - Lashify Artistry"
+        customer_message = f"""
+Hi {booking.name},
+
+Thank you for booking with Lashify Artistry! 💖
+
+💅 Service: {service_display}
+📅 Date: {booking.date}
+💰 Booking Fee: ₦{booking.fee}
+💳 Payment Method: {payment_display}
+
+Please confirm your booking by clicking below:
+{confirmation_url}
+
+With love,
+Lashify Artistry
+"""
+        email_customer = EmailMessage(
+            subject=customer_subject,
+            body=customer_message,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            to=[booking.email],
+        )
+        email_customer.send(fail_silently=False)
 
         return render(request, 'booking_success.html', {'booking': booking})
 
@@ -131,17 +155,29 @@ def my_bookings(request):
 
 
 def send_customer_confirmation(request, token):
-    """Customer clicks confirmation link -> we mark booking + send final emails."""
+    """Customer clicks confirmation link -> mark booking + send final email."""
     booking = get_object_or_404(Booking, confirmation_token=token)
 
-    confirmation_msg = f"""
-    Hi {booking.name},
+    # Format service name
+    if hasattr(booking, "get_service_display"):
+        service_display = booking.get_service_display()
+    else:
+        service_display = str(booking.service).replace("_", " ").title()
 
-    Your booking for {booking.service} on {booking.date} has been confirmed ✅.
+    confirmation_message = f"""
+Hi {booking.name},
 
-    Thank you,
-    Lashify Artistry
-    """
-    send_app_email("Booking Confirmed - Lashify Artistry", confirmation_msg, booking.email)
+Your booking for {service_display} on {booking.date} has been confirmed ✅.
+
+Thank you,
+Lashify Artistry
+"""
+    email = EmailMessage(
+        subject="Booking Confirmed - Lashify Artistry",
+        body=confirmation_message,
+        from_email=settings.DEFAULT_FROM_EMAIL,
+        to=[booking.email],
+    )
+    email.send(fail_silently=False)
 
     return HttpResponse("Booking confirmed and email sent.")
